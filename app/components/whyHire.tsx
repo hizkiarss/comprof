@@ -10,7 +10,7 @@ const WhyHire = () => {
         <div className="relative mt-12 h-screen flex items-center justify-center ">
 
             <div
-                className="bg-[url('/hirebackground.svg')] bg-contain bg-no-repeat bg-center text-5xl md:text-8xl h-3/5 w-full relative ">
+                className="bg-[url('/photos/hirebackground.svg')] bg-contain bg-no-repeat bg-center text-5xl md:text-8xl h-3/5 w-full relative ">
                 <BlurText  text='see' style='bg-opacity-70 font-bold rounded-full mt-5 absolute top-20 left-48' />
                 <BlurText  text='all' style='bg-opacity-70 font-bold rounded-full absolute top-[180px] left-[255px]' />
                 <BlurText  text='the' style='bg-opacity-70 font-bold rounded-full -mt-10 absolute bottom-40 right-60' />

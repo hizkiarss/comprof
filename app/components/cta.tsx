@@ -1,9 +1,7 @@
 import React from 'react';
-import linkedinlogo from "@/public/logo/linkedinwhite.png"
 import Image from "next/image";
 import Link from 'next/link';
-import logoBottom from '@/public/photos/logoBottom.png'
-
+import LogoBottom from '@/public/photos/logoBottom.png'
 
 
 const Cta = () => {
@@ -25,7 +23,7 @@ const Cta = () => {
             <div className='relative flex flex-col justify-between items-center group h-[600px]'>
                 <p className='text-[20px] z-20'>Big ideas need bold support.</p>
                 <p className='text-[50px]  opacity-0 group-hover:opacity-100 transition-all duration-1000 tracking-tighter w-fit absolute top-48 px-4 left-16 z-20 '>call</p>
-                <Image src={logoBottom} className='w-[1000px] object-cover absolute -bottom-32 left-1/2 transform -translate-x-1/2 z-10 group-hover:bottom-32 transition-all duration-1000' alt='' />
+                <Image width={1000} height={500} src="/photos/logoBottom.png" className='object-cover absolute -bottom-32 left-1/2 transform -translate-x-1/2 z-10 group-hover:bottom-32 transition-all duration-1000' alt='' />
                 <p className='text-[50px]  opacity-0 group-hover:opacity-100 transition-all duration-1000 tracking-tighter absolute top-48 px-4 right-20 z-20'>now.</p>
                 <div className={"flex md:flex-row flex-col justify-between gap-10 w-full my-10 opacity-0 group-hover:opacity-100 transition-all duration-1000 "}>
 
@@ -37,7 +35,7 @@ const Cta = () => {
                             <p className={"font-bold text-sm md:text-xl"}>Github</p>
                             <p className={"text-xs md:text-base "}>github.com/hizkiarss</p>
                         </div>
-                        <Image src="logo/githubwhite.png" className={"h-8 md:h-12 w-fit invert"} alt="Github Logo" />
+                        <Image  width={100} height={100} src="/logo/githubwhite.png" className={"h-8 md:h-12 w-fit invert"} alt="Github Logo" />
                     </button>
                 </Link>
 
@@ -50,7 +48,7 @@ const Cta = () => {
                             <p className={"font-bold text-sm md:text-xl"}>Gmail</p>
                             <p className={"text-xs md:text-base "}>hizkiarssihombing@gmail.com</p>
                         </div>
-                        <Image src="logo/gmailwhite.png" className={"h-6 md:h-10 w-fit invert z-0"} alt="Gmail Logo" />
+                        <Image src="/logo/gmailwhite.png" width={100} height={100} className={"h-6 md:h-10 w-fit invert z-0"} alt="Gmail Logo" />
                     </button>
                 </Link>
 
@@ -63,13 +61,12 @@ const Cta = () => {
                             <p className={"font-bold text-sm md:text-xl"}>Linkedin</p>
                             <p className={"text-xs md:text-base"}>linkedin.com/in/hizkiasihombing/</p>
                         </div>
-                        <Image src={linkedinlogo} className={"h-8 md:h-10 w-fit invert z-0"} alt="Linkedin Logo" />
+                        <Image src="/logo/linkedinwhite.png" width={100} height={100} className={"h-8 md:h-10 w-fit invert z-0"} alt="Linkedin Logo" />
                     </button>
                 </Link>
 
 
             </div>
-                {/* <p className='font-bold text-[35px] bg-black text-[#f0f0f0] rounded-full w-fit absolute top-60 px-4 right-12 rotate-6 z-10'>NOW</p> */}
             </div>
 
         </div>

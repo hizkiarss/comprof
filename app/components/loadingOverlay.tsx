@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import clsx from 'clsx';
-import logo from "@/public/logo/logo.svg";
 import Image from 'next/image';
 
 
@@ -31,7 +30,7 @@ const LoadingOverlay = () => {
             )}
         >
 
-                <Image src={logo} alt="logo" className="w-60" />
+                <Image width={0} height={0} src="logo/logo.svg" alt="logo" className="w-60" />
 
         </div>
     );
