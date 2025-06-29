@@ -23,24 +23,19 @@ const Page = () => {
                     </div>
                     s
                     <video
-                        src="Sosmed 1.mp4"
+                        src="video/Sosmed 1.mp4"
                         className="fixed top-0 h-screen  object-cover w-[1140px]  z-10"
                         autoPlay
                         loop
                         muted
                     />
 
-                    {/* Content after the video section */}
                     <div className="relative z-20 bg-white">
                         <FAQ />
                         <Cta />
                     </div>
 
-                    {/* <SmallBusiness/> */}
-                    {/* <Divider /> */}
-                    {/* Option 3: Background attachment effect */}
-                    {/* <ImageCarousel/> */}
-                    {/* <Trigger/> */}
+
                 </div>
             </div>
         </div>

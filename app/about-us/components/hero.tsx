@@ -4,10 +4,10 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 import Buttons from "@/components/buttons";
 import Magnet from "@/app/components/animation/magnet"
 import Image from "next/image";
-import Galih from "@/public/Galih.png"
-import Kia from "@/public/Kia.webp"
-import NameRichard from "@/public/richard.png"
-import NameGus from "@/public/gus.png"
+import Galih from "@/public/photos/Galih.png"
+import Kia from "@/public/photos/Kia.webp"
+import NameRichard from "@/public/photos/richard.png"
+import NameGus from "@/public/photos/gus.png"
 
 
 type HoverVideoProps = {
@@ -91,11 +91,11 @@ const Hero = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const videos = [
-        { src: "Sosmed 1.mp4", title: "Instagram Post Design", poster: "/Social%20Media%20Creative%20Porto%201.png" },
-        { src: "Sosmed 2.mp4", title: "Campaign Visuals", poster: "/Social%20Media%20Creative%20Porto%202.png" },
-        { src: "Sosmed 3.mp4", title: "Story Highlight", poster: "/Social%20Media%20Creative%20Porto%203.png" },
-        { src: "Website 1.mp4", title: "Client Brand Pack", poster: "/Social%20Media%20Creative%20Porto%201.png" },
-        { src: "Website 2.mp4", title: "Minimal Layout Set", poster: "/Social%20Media%20Creative%20Porto%202.png" },
+        { src: "video/Sosmed 1.mp4", title: "Instagram Post Design", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
+        { src: "video/Sosmed 2.mp4", title: "Campaign Visuals", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
+        { src: "video/Sosmed 3.mp4", title: "Story Highlight", poster: "photos/Social%20Media%20Creative%20Porto%203.png" },
+        { src: "video/Website 1.mp4", title: "Client Brand Pack", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
+        { src: "video/Website 2.mp4", title: "Minimal Layout Set", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
     ];
 
     return (

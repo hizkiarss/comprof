@@ -4,11 +4,11 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import socmedporto1 from "@/public/Social Media Creative Porto 1.png"
-import socmedporto2 from "@/public/Social Media Creative Porto 2.png"
-import socmedporto3 from "@/public/Social Media Creative Porto 3.png"
+import socmedporto1 from "@/public/photos/Social Media Creative Porto 1.png"
+import socmedporto2 from "@/public/photos/Social Media Creative Porto 2.png"
+import socmedporto3 from "@/public/photos/Social Media Creative Porto 3.png"
 import { ArrowUpRight } from "lucide-react";
-import ArrowRight from "@/public/right-arrow.png"
+import ArrowRight from "@/public/photos/right-arrow.png"
 
 
 

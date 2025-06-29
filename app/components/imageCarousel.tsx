@@ -8,9 +8,9 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import socmedporto1 from "@/public/Social Media Creative Porto 1.png"
-import socmedporto2 from "@/public/Social Media Creative Porto 2.png"
-import socmedporto3 from "@/public/Social Media Creative Porto 3.png"
+import socmedporto1 from "@/public/photos/Social Media Creative Porto 1.png"
+import socmedporto2 from "@/public/photos/Social Media Creative Porto 2.png"
+import socmedporto3 from "@/public/photos/Social Media Creative Porto 3.png"
 import SeeMoreButton from '@/components/seeMoreButton'
 import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"

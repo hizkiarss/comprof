@@ -4,7 +4,7 @@ import githublogo from "@/public/logo/githubwhite.png"
 import gmaillogo from "@/public/logo/gmailwhite.png"
 import Image from "next/image";
 import Link from 'next/link';
-import logoBottom from '@/public/logoBottom.png'
+import logoBottom from '@/public/photos/logoBottom.png'
 
 
 

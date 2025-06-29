@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Buttons from '@/components/buttons';
 import { goToDiv } from '@/utils/goToContact';
 import Image, { StaticImageData } from 'next/image';
-import SocialMedia2 from "@/public/Social Media Creative Porto 2.png"
-import SocialMedia3 from "@/public/Social Media Creative Porto 3.png"
+import SocialMedia2 from "@/public/photos/Social Media Creative Porto 2.png"
+import SocialMedia3 from "@/public/photos/Social Media Creative Porto 3.png"
 
 
 const triggers = [
