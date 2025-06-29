@@ -1,0 +1,53 @@
+import React from 'react';
+import Hero from "./components/hero";
+import Navbar from "@/app/components/navbar";
+import ImageCarousel from '../components/imageCarousel';
+import CursorFollower from '@/app/components/cursorFollower'
+import SmallBusiness from './components/smallBusiness';
+import FAQ from './components/faq'
+import Values from './components/values'
+import Divider from './components/divider';
+import Cta from '../components/cta';
+
+const Page = () => {
+    return (
+        <div className="flex justify-center relative  ">
+            <div className="flex gap-10 max-w-[1280px] ">
+                <Navbar />
+                <div className="overflow-hidden max-w-[1140px] ">
+                    <div className="relative z-20">
+                        <CursorFollower />
+                        <Hero />
+                        <Values />
+                    </div>
+
+                    <div className="relative h-screen bg-transparent pt-10">
+
+                    </div>
+                    s
+                    <video
+                        src="Sosmed 1.mp4"
+                        className="fixed top-0 h-screen  object-cover w-[1140px]  z-10"
+                        autoPlay
+                        loop
+                        muted
+                    />
+
+                    {/* Content after the video section */}
+                    <div className="relative z-20 bg-white">
+                        <FAQ />
+                        <Cta />
+                    </div>
+
+                    {/* <SmallBusiness/> */}
+                    {/* <Divider /> */}
+                    {/* Option 3: Background attachment effect */}
+                    {/* <ImageCarousel/> */}
+                    {/* <Trigger/> */}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Page;
