@@ -103,7 +103,7 @@ const Hero = () => {
 
                         <Magnet>
                             <div className="group relative">
-                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/Galih.PNG" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
                                 <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>
                         </Magnet>
