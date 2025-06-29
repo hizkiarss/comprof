@@ -4,11 +4,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import socmedporto1 from "@/public/photos/Social Media Creative Porto 1.png"
-import socmedporto2 from "@/public/photos/Social Media Creative Porto 2.png"
-import socmedporto3 from "@/public/photos/Social Media Creative Porto 3.png"
 import { ArrowUpRight } from "lucide-react";
-import ArrowRight from "@/public/photos/right-arrow.png"
 
 
 
@@ -93,8 +89,10 @@ const HorizontalCarousel = () => {
                             <div className="flex gap-4 h-[408px]">
                                 <div className="overflow-hidden rounded-xl relative group">
                                     <Image
-                                        src={socmedporto1}
+                                        src="/photos/Social Media Creative Porto 1.png"
                                         alt="slide"
+                                        width={800}
+                                        height={800}
                                         className="w-[800px] h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
                                     />
                                     <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -107,7 +105,7 @@ const HorizontalCarousel = () => {
 
                                 <div className="flex flex-col gap-2 h-[408px]">
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src={socmedporto2} alt="slide"
+                                        <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200} alt="slide"
                                             className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -119,7 +117,7 @@ const HorizontalCarousel = () => {
                                     </div>
 
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src={socmedporto3} alt="slide"
+                                        <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200} alt="slide"
                                             className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -149,8 +147,10 @@ const HorizontalCarousel = () => {
                             <div className="flex gap-4 h-[408px]">
                                 <div className="overflow-hidden rounded-xl relative group">
                                     <Image
-                                        src={socmedporto1}
+                                        src="/photos/Social Media Creative Porto 1.png"
                                         alt="slide"
+                                        width={800}
+                                        height={800}
                                         className="w-[800px] h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
                                     />
                                     <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -163,7 +163,10 @@ const HorizontalCarousel = () => {
 
                                 <div className="flex flex-col gap-2 h-[408px]">
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src={socmedporto2} alt="slide"
+                                        <Image src="/photos/Social Media Creative Porto 2.png"
+                                            alt="slide"
+                                            width={400}
+                                            height={200}
                                             className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -175,7 +178,10 @@ const HorizontalCarousel = () => {
                                     </div>
 
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src={socmedporto3} alt="slide"
+                                        <Image src="/photos/Social Media Creative Porto 3.png"
+                                        alt="slide"
+                                        width={400}
+                                        height={200}
                                             className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -205,8 +211,10 @@ const HorizontalCarousel = () => {
                             <div className="flex gap-4 h-[408px]">
                                 <div className="overflow-hidden rounded-xl relative group">
                                     <Image
-                                        src={socmedporto1}
+                                        src="/photos/Social Media Creative Porto 1.png"
                                         alt="slide"
+                                        width={800}
+                                        height={800}
                                         className="w-[800px] h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
                                     />
                                     <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -219,7 +227,10 @@ const HorizontalCarousel = () => {
 
                                 <div className="flex flex-col gap-2 h-[408px]">
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src={socmedporto2} alt="slide"
+                                        <Image src="/photos/Social Media Creative Porto 2.png"
+                                            alt="slide"
+                                            width={400}
+                                            height={200}
                                             className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -231,7 +242,10 @@ const HorizontalCarousel = () => {
                                     </div>
 
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src={socmedporto3} alt="slide"
+                                        <Image src="/photos/Social Media Creative Porto 1.png"
+                                            alt="slide"
+                                            width={400}
+                                            height={200}
                                             className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
@@ -261,7 +275,8 @@ const HorizontalCarousel = () => {
                 <div className="flex justify-end">
                     <div className=" gap-2 mt-1 bg-black text-white rounded-full px-3 py-2 text-xs flex ">
                         <p> Scroll for more</p>
-                        <Image src={ArrowRight} alt="arrow-right" className="w-4 invert" />
+                        <Image width={16}
+                                height={16} src="/photos/right-arrow.png" alt="arrow-right" className="w-4 invert" />
                     </div>
                 </div>
 

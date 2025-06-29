@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
-import LogoBottom from '@/public/photos/logoBottom.png'
 
 
 const Cta = () => {

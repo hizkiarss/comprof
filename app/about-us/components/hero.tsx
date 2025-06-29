@@ -4,10 +4,7 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 import Buttons from "@/components/buttons";
 import Magnet from "@/app/components/animation/magnet"
 import Image from "next/image";
-import Galih from "@/public/photos/Galih.png"
-import Kia from "@/public/photos/Kia.webp"
-import NameRichard from "@/public/photos/richard.png"
-import NameGus from "@/public/photos/gus.png"
+
 
 
 type HoverVideoProps = {
@@ -106,8 +103,8 @@ const Hero = () => {
 
                         <Magnet>
                             <div className="group relative">
-                                <Image src={Galih} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
-                                <Image src={NameGus} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
+                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>
                         </Magnet>
                         <div className={`z-0 transition-all duration-300 w-[500px]`}>
@@ -139,8 +136,8 @@ const Hero = () => {
                         </div>
                         <Magnet >
                             <div className="group relative">
-                                <Image src={Kia} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
-                                <Image src={NameRichard} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
+                                <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/richard.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>                        </Magnet>
 
                     </div>

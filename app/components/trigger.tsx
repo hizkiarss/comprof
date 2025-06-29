@@ -2,19 +2,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Buttons from '@/components/buttons';
 import { goToDiv } from '@/utils/goToContact';
-import Image, { StaticImageData } from 'next/image';
-import SocialMedia2 from "@/public/photos/Social Media Creative Porto 2.png"
-import SocialMedia3 from "@/public/photos/Social Media Creative Porto 3.png"
+import Image from 'next/image';
+
 
 
 const triggers = [
     // { id: 'msa', label: 'MSA Agency', subLabel: 'COMPANY PROFILE WEBSITE', image: '/Social Media Creative Porto 1.png' },
-    { id: 'branding', label: 'Branding', subLabel: 'BRAND IDENTITY DESIGN', image: SocialMedia2 },
-    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: SocialMedia3 },
+    { id: 'branding', label: 'Branding', subLabel: 'BRAND IDENTITY DESIGN', image: "/photos/Social Media Creative Porto 2.png" },
+    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
 ];
 
 export default function Trigger() {
-    const [hoveredTrigger, setHoveredTrigger] = useState<{ id: string, image: StaticImageData } | null>(null);
+    const [hoveredTrigger, setHoveredTrigger] = useState<{ id: string, image: string } | null>(null);
     const [coords, setCoords] = useState({ x: 0, y: 0 });
     const [targetCoords, setTargetCoords] = useState({ x: 0, y: 0 });
     const [isVisible, setIsVisible] = useState(false);
@@ -138,17 +137,17 @@ export default function Trigger() {
                             <div className="">
                                 0{i + 1}.
                             </div>
-                            <div className="">
+                            <div className="tracking-tighter">
                                 {trigger.label}
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
 
 
-                            <div className="text-[7px] md:text-base font-bold font-Helvetica border-2 rounded-full px-2 py-1 md:px-6 md:py-3 z-20 
+                            <div className="text-[7px] md:text-base tracking-tighter font-Helvetica border-2 rounded-full px-2 py-1 md:px-6 md:py-3 z-20 
                         transition-all duration-1000 text-black group-hover:text-white group-hover:border-white
                     group-data-[state=open]:text-white group-data-[state=open]:border-white">
-                                COMPANY PROFILE WEBSITE
+                                {trigger.subLabel}
 
                             </div>
                         </div>
@@ -169,6 +168,8 @@ export default function Trigger() {
                 >
                     <div className="bg-white rounded-lg shadow-2xl overflow-hidden border">
                         <Image
+                            width={100}
+                            height={100}
                             src={hoveredTrigger.image}
                             alt="Preview"
                             className="w-64 h-40 object-cover"

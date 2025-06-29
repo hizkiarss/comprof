@@ -8,9 +8,6 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import socmedporto1 from "@/public/photos/Social Media Creative Porto 1.png"
-import socmedporto2 from "@/public/photos/Social Media Creative Porto 2.png"
-import socmedporto3 from "@/public/photos/Social Media Creative Porto 3.png"
 import SeeMoreButton from '@/components/seeMoreButton'
 import Image from 'next/image'
 import { Badge } from "@/components/ui/badge"
@@ -25,19 +22,19 @@ const ImageCarousel = () => {
     const portfolioItems = [
         {
             id: 1,
-            image: socmedporto1,
+            image: "/photos/Social Media Creative Porto 1.png",
             alt: 'Social Media Creative Portfolio 1',
             badges: ['Social Media Management', 'Website Development']
         },
         {
             id: 2,
-            image: socmedporto2,
+            image: "/photos/Social Media Creative Porto 2.png",
             alt: 'Social Media Creative Portfolio 2',
             badges: ['Social Media Management', 'Website Development']
         },
         {
             id: 3,
-            image: socmedporto3,
+            image: "/photos/Social Media Creative Porto 3.png",
             alt: 'Social Media Creative Portfolio 3',
             badges: ['Social Media Management', 'Website Development']
         }
@@ -59,7 +56,8 @@ const ImageCarousel = () => {
                             className='relative group h-[550px] w-full overflow-hidden rounded-xl'
                         >
                             <Image 
-                                width={0}
+                                width={2000}
+                                height={2000}
                                 src={item.image} 
                                 alt={item.alt}
                                 className="w-full h-full object-cover object-top transform transition duration-300 group-hover:scale-105 origin-center overflow-hidden"
