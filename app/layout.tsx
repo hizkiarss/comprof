@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import LoadingOverlay from "./components/loadingOverlay";
-import { useLenis } from '@/hooks/useLenis';
 import SmoothScroll from "./components/smoothScroll";
+import ClientOnly from "./components/clientOnly";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,11 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white text-black font-Helvetica ">
-        <SmoothScroll>
+        {children}
+
+        <ClientOnly>
           <LoadingOverlay />
-          {children}
-        </SmoothScroll>
+          <SmoothScroll />  
+        </ClientOnly>
       </body>
+
     </html>
   );
 }

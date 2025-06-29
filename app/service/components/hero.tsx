@@ -1,11 +1,10 @@
 'use client'
 
 import Buttons from '@/components/buttons';
-import { Button } from '@/components/ui/button';
 import React, { useRef, useEffect } from 'react';
 
 const Hero = () => {
-    const videoRef = useRef(null);
+const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
         const timer = setTimeout(() => {

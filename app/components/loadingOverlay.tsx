@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import logo from "@/public/logo/logo.svg";
 import Image from 'next/image';
-import FadeInAnimation from "@/app/components/fadeInAnimation";
 
 
 

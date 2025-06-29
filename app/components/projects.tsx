@@ -10,9 +10,6 @@ import gelitixBg from "@/public/gelitixbg.jpg"
 import mscBg from "@/public/mscbg.jpg"
 import Link from 'next/link';
 import { ChevronDown } from "lucide-react"
-import { useState } from 'react';
-
-
 import {
     Accordion,
     AccordionContent,
@@ -25,11 +22,6 @@ import Logo from "@/components/logo";
 import { goToDiv } from "@/utils/goToContact";
 
 const Projects = () => {
-    const [isOpen1, setIsOpen1] = useState(false);
-    const [isOpen2, setIsOpen2] = useState(false);
-    const [isOpen3, setIsOpen3] = useState(false);
-
-
     return (
         <div className="px-4  mt-20 md:mt-40" id={"projects"}>
             <div className={"md:flex justify-between items-center"}>
@@ -45,7 +37,6 @@ const Projects = () => {
                 <Buttons content={"Let's discuss"} onClick={() => goToDiv("contact")}
                     className={"text-sm md:text-base mt-4 md:mt-0 hidden md:flex"} />
             </div>
-
 
             <Accordion type="single" collapsible className="mt-4 md:mt-10">
                 <AccordionItem className='group' value="item-1">

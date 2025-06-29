@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import NomadSS1 from "@/public/nomad-ss-1.png";
 import Image from "next/image";
 import socmedporto1 from "@/public/Social Media Creative Porto 1.png"
 import socmedporto2 from "@/public/Social Media Creative Porto 2.png"

@@ -1,12 +1,9 @@
 import React from 'react';
 import Hero from "./components/hero";
 import Navbar from "@/app/components/navbar";
-import ImageCarousel from '../components/imageCarousel';
 import CursorFollower from '@/app/components/cursorFollower'
-import SmallBusiness from './components/smallBusiness';
 import FAQ from './components/faq'
 import Values from './components/values'
-import Divider from './components/divider';
 import Cta from '../components/cta';
 
 const Page = () => {

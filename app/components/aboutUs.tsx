@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import FadeInAnimation from "@/app/components/fadeInAnimation";
-import Buttons from "@/components/buttons";
 
 const Hero = () => {
     return (

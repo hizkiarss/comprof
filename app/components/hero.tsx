@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react';
-import Image from "next/image";
 import Buttons from "@/components/buttons";
 import { goToDiv } from "@/utils/goToContact";
 import MetaBalls from "@/app/components/metaBalls";

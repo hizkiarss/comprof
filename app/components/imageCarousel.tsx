@@ -48,16 +48,18 @@ const ImageCarousel = () => {
             <Carousel 
                 className='relative'
                 plugins={[plugin.current]}
-                onMouseEnter={plugin.current.stop}
-                onMouseLeave={plugin.current.play}
+                onMouseEnter={() => plugin.current.stop()}
+                onMouseLeave={() => plugin.current.play()}
+
             >
                 <CarouselContent>
-                    {portfolioItems.map((item, index) => (
+                    {portfolioItems.map((item) => (
                         <CarouselItem 
                             key={item.id} 
                             className='relative group h-[550px] w-full overflow-hidden rounded-xl'
                         >
                             <Image 
+                                width={0}
                                 src={item.image} 
                                 alt={item.alt}
                                 className="w-full h-full object-cover object-top transform transition duration-300 group-hover:scale-105 origin-center overflow-hidden"

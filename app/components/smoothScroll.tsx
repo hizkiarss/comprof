@@ -2,7 +2,7 @@
 
 import { useLenis } from '@/hooks/useLenis';
 
-export default function SmoothScroll({ children }: { children: React.ReactNode }) {
+export default function SmoothScroll() {
   useLenis();
-  return <>{children}</>;
+  return null;
 }

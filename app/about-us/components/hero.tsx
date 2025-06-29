@@ -2,7 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import FadeInAnimation from "@/app/components/fadeInAnimation";
 import Buttons from "@/components/buttons";
-import { Post } from "ogl";
 import Magnet from "@/app/components/animation/magnet"
 import Image from "next/image";
 import Galih from "@/public/Galih.png"
@@ -113,13 +112,13 @@ const Hero = () => {
                         </Magnet>
                         <div className={`z-0 transition-all duration-300 w-[500px]`}>
                             <h1 className={`relative text-center tracking-tight leading-[0.9] text-[20px] md:text-[50px] -mt-5 transition-all duration-400  ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
-                                It's just
+                                It&apos;s just
                                 <span className={`font-Edwardian tracking-wide font-medium text-[60px] md:text-[90px] mx-3 relative inline-block transition-all duration-400 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
                                     two
                                     <div className="absolute bottom-2 right-0 h-[2px] w-full bg-black animate-underlineRightToLeft" style={{ animationDelay: "2800ms" }} />
                                 </span>
                                 of us&mdash; <br />
-                                yet somehow that's<br />
+                                yet somehow that&apos;s<br />
                                 <div className='-mt-4'>
                                     all you ever
                                     <span className="font-Edwardian tracking-wide font-medium text-[60px] mx-3 md:text-[90px] relative inline-block">
@@ -132,7 +131,7 @@ const Hero = () => {
 
                             <div className={`flex flex-col justify-center items-center gap-4`}>
                                 <p className={`text-center transition-all duration-400 mt-3 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
-                                    We design and build websites that actually work, craft visuals that turn heads, and manage social media so you don't have to.
+                                    We design and build websites that actually work, craft visuals that turn heads, and manage social media so you don&apos;t have to.
                                     <br /> <span className="font-semibold font-Aeonik">No big agency fluff, just two humans who get stuff done.</span>
                                 </p>
                                 <Buttons className={`${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} content='Contact us' />

@@ -1,9 +1,7 @@
 'use client';
 import React, {useState, useEffect} from 'react';
-import Buttons from "@/components/buttons";
 import {goToDiv} from "@/utils/goToContact";
 import Image from "next/image";
-import pp from "@/public/pp.png";
 import logo from "@/public/logo/logo.svg";
 import githubLogo from "@/public/logo/githubwhite.png";
 import linkedinLogo from "@/public/logo/linkedinwhite.png";

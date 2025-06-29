@@ -1,6 +1,5 @@
 import React from 'react'
 import { Badge } from "@/components/ui/badge"
-import { AlertCircleIcon, BadgeCheckIcon, CheckIcon } from "lucide-react"
 
 
 const badge = () => {

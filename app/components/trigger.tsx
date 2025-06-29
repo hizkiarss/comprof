@@ -1,17 +1,20 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown } from 'lucide-react';
 import Buttons from '@/components/buttons';
 import { goToDiv } from '@/utils/goToContact';
+import Image, { StaticImageData } from 'next/image';
+import SocialMedia2 from "@/public/Social Media Creative Porto 2.png"
+import SocialMedia3 from "@/public/Social Media Creative Porto 3.png"
+
 
 const triggers = [
     // { id: 'msa', label: 'MSA Agency', subLabel: 'COMPANY PROFILE WEBSITE', image: '/Social Media Creative Porto 1.png' },
-    { id: 'branding', label: 'Branding', subLabel: 'BRAND IDENTITY DESIGN', image: '/Social Media Creative Porto 2.png' },
-    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: '/Social Media Creative Porto 3.png' },
+    { id: 'branding', label: 'Branding', subLabel: 'BRAND IDENTITY DESIGN', image: SocialMedia2 },
+    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: SocialMedia3 },
 ];
 
 export default function Trigger() {
-    const [hoveredTrigger, setHoveredTrigger] = useState<{ id: string, image: string } | null>(null);
+    const [hoveredTrigger, setHoveredTrigger] = useState<{ id: string, image: StaticImageData } | null>(null);
     const [coords, setCoords] = useState({ x: 0, y: 0 });
     const [targetCoords, setTargetCoords] = useState({ x: 0, y: 0 });
     const [isVisible, setIsVisible] = useState(false);
@@ -75,31 +78,26 @@ export default function Trigger() {
     };
 
     const handleMouseEnter = (trigger: typeof triggers[0]) => {
-        // Clear any pending timeout
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
             timeoutRef.current = null;
         }
 
-        // If we're switching between triggers, maintain visibility
         const wasVisible = hoveredTrigger !== null;
         setHoveredTrigger({ id: trigger.id, image: trigger.image });
 
-        // If we were already showing an image, keep it visible during transition
         if (wasVisible) {
             setIsVisible(true);
         }
     };
 
     const handleMouseLeave = () => {
-        // Clear any pending timeout
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current);
             timeoutRef.current = null;
         }
 
         setIsVisible(false);
-        // Delay removing the hover state to allow exit animation
         timeoutRef.current = setTimeout(() => setHoveredTrigger(null), 200);
     };
 
@@ -170,7 +168,7 @@ export default function Trigger() {
                     }}
                 >
                     <div className="bg-white rounded-lg shadow-2xl overflow-hidden border">
-                        <img
+                        <Image
                             src={hoveredTrigger.image}
                             alt="Preview"
                             className="w-64 h-40 object-cover"

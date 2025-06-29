@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import AnimatedContent from "@/app/components/animation/animatedContent";
 import WithoutScrollAnimatedContent from "./animation/WithoutScrollAnimatedContent";

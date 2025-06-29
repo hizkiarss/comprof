@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import { Brush, GitCompareArrows, MonitorCheck, MonitorSmartphone } from "lucide-react";
-import Image from "next/image";
 import FadeInAnimation from "@/app/components/fadeInAnimation";
 import BlurText from './blurText';
 
@@ -17,10 +16,7 @@ const WhyHire = () => {
                 <BlurText  text='the' style='bg-opacity-70 font-bold rounded-full -mt-10 absolute bottom-40 right-60' />
                 <BlurText  text='benefits' style='bg-opacity-70 font-bold rounded-full absolute bottom-20 right-[20px]' />
 
-                {/* <p className={"bg-opacity-70 font-bold rounded-full mt-5 absolute top-40 left-0 "}>see </p>
-                <p className={"bg-opacity-70 font-bold rounded-full absolute top-[260px] left-[45px]"}>all</p>
-                <p className={"bg-opacity-70 font-bold rounded-full -mt-10 absolute bottom-60 right-10  "}>the</p>
-                <p className={"bg-opacity-70 font-bold rounded-full absolute bottom-40 -right-[184px]"}>benefits</p> */}
+              
             </div>
 
             <div
