@@ -1,7 +1,5 @@
 import React from 'react';
 import linkedinlogo from "@/public/logo/linkedinwhite.png"
-import githublogo from "@/public/logo/githubwhite.png"
-import gmaillogo from "@/public/logo/gmailwhite.png"
 import Image from "next/image";
 import Link from 'next/link';
 import logoBottom from '@/public/photos/logoBottom.png'
@@ -39,7 +37,7 @@ const Cta = () => {
                             <p className={"font-bold text-sm md:text-xl"}>Github</p>
                             <p className={"text-xs md:text-base "}>github.com/hizkiarss</p>
                         </div>
-                        <Image src={githublogo} className={"h-8 md:h-12 w-fit invert"} alt="Github Logo" />
+                        <Image src="logo/githubwhite.png" className={"h-8 md:h-12 w-fit invert"} alt="Github Logo" />
                     </button>
                 </Link>
 
@@ -52,7 +50,7 @@ const Cta = () => {
                             <p className={"font-bold text-sm md:text-xl"}>Gmail</p>
                             <p className={"text-xs md:text-base "}>hizkiarssihombing@gmail.com</p>
                         </div>
-                        <Image src={gmaillogo} className={"h-6 md:h-10 w-fit invert z-0"} alt="Gmail Logo" />
+                        <Image src="logo/gmailwhite.png" className={"h-6 md:h-10 w-fit invert z-0"} alt="Gmail Logo" />
                     </button>
                 </Link>
 
