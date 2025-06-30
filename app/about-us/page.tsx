@@ -23,7 +23,7 @@ const Page = () => {
                     </div>
                     s
                     <video
-                        src="video/Sosmed 1.mp4"
+                        src="/video/Sosmed 1.mp4"
                         className="fixed top-0 h-screen  object-cover w-[1140px]  z-10"
                         autoPlay
                         loop

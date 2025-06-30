@@ -88,11 +88,11 @@ const Hero = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const videos = [
-        { src: "video/Sosmed 1.mp4", title: "Instagram Post Design", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
-        { src: "video/Sosmed 2.mp4", title: "Campaign Visuals", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
-        { src: "video/Sosmed 3.mp4", title: "Story Highlight", poster: "photos/Social%20Media%20Creative%20Porto%203.png" },
-        { src: "video/Website 1.mp4", title: "Client Brand Pack", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
-        { src: "video/Website 2.mp4", title: "Minimal Layout Set", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
+        { src: "/video/Sosmed 1.mp4", title: "Instagram Post Design", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
+        { src: "/video/Sosmed 2.mp4", title: "Campaign Visuals", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
+        { src: "/video/Sosmed 3.mp4", title: "Story Highlight", poster: "photos/Social%20Media%20Creative%20Porto%203.png" },
+        { src: "/video/Website 1.mp4", title: "Client Brand Pack", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
+        { src: "/video/Website 2.mp4", title: "Minimal Layout Set", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
     ];
 
     return (
@@ -103,7 +103,7 @@ const Hero = () => {
 
                         <Magnet>
                             <div className="group relative">
-                                <Image src="/photos/Galih.PNG" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
                                 <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>
                         </Magnet>
