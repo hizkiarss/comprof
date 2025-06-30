@@ -4,20 +4,25 @@ import { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Image from 'next/image';
 
-
-
 const LoadingOverlay = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [animateOut, setAnimateOut] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const handleLoad = () => {
             setAnimateOut(true);
+            setTimeout(() => setIsVisible(false), 1000); // Wait for animation to finish
+        };
 
-            setTimeout(() => setIsVisible(false), 1000);
-        }, 1000);
+        if (document.readyState === 'complete') {
+            handleLoad(); // If already loaded
+        } else {
+            window.addEventListener('load', handleLoad);
+        }
 
-        return () => clearTimeout(timer);
+        return () => {
+            window.removeEventListener('load', handleLoad);
+        };
     }, []);
 
     if (!isVisible) return null;
@@ -29,9 +34,14 @@ const LoadingOverlay = () => {
                 animateOut ? '-translate-y-full' : 'translate-y-0'
             )}
         >
-
-                <Image width={0} height={0} src="logo/logo.svg" alt="logo" className="w-60" />
-
+            <Image
+                width={0}
+                height={0}
+                src="/logo/logo.svg"
+                alt="logo"
+                className="w-60"
+                priority
+            />
         </div>
     );
 };
