@@ -88,11 +88,11 @@ const Hero = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     const videos = [
-        { src: "/video/Sosmed 1.mp4", title: "Instagram Post Design", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
-        { src: "/video/Sosmed 2.mp4", title: "Campaign Visuals", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
-        { src: "/video/Sosmed 3.mp4", title: "Story Highlight", poster: "photos/Social%20Media%20Creative%20Porto%203.png" },
-        { src: "/video/Website 1.mp4", title: "Client Brand Pack", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
-        { src: "/video/Website 2.mp4", title: "Minimal Layout Set", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
+        { src: "/video/sosmed1.mp4", title: "Instagram Post Design", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
+        { src: "/video/sosmed2.mp4", title: "Campaign Visuals", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
+        { src: "/video/sosmed3.mp4", title: "Story Highlight", poster: "photos/Social%20Media%20Creative%20Porto%203.png" },
+        { src: "/video/website1.mp4", title: "Client Brand Pack", poster: "photos/Social%20Media%20Creative%20Porto%201.png" },
+        { src: "/video/website2.mp4", title: "Minimal Layout Set", poster: "photos/Social%20Media%20Creative%20Porto%202.png" },
     ];
 
     return (
