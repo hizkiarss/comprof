@@ -9,9 +9,9 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 
 const Hero = () => {
     return (
-        <div className=" pt-10 h-screen flex flex-col justify-between">
-            <div className={"grid grid-cols-3 gap-2 md:gap-3"}>
-                <div className="bg-black rounded-xl border-[#D9DBF1] h-[300px] relative overflow-hidden ">
+        <div className=" h-screen flex flex-col justify-between mx-2  ">
+            <div className={"md:grid grid-cols-3 gap-2 md:gap-3 flex justify-center  "}>
+                <div className="bg-black rounded-xl border-[#D9DBF1] h-[300px] w-full z-20 relative overflow-hidden ">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -26,7 +26,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="bg-black rounded-xl border-[#D9DBF1] h-[380px] relative overflow-hidden">
+                <div className="hidden md:block bg-black rounded-xl border-[#D9DBF1] h-[380px] relative overflow-hidden">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -41,7 +41,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="bg-black rounded-xl border-0 h-[460px] relative overflow-hidden">
+                <div className="hidden md:block bg-black rounded-xl border-0 h-[460px] relative overflow-hidden">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -62,16 +62,16 @@ const Hero = () => {
             <FadeInAnimation scroll={false} delay={2.5} >
                 <div className={"lg:grid grid-cols-6 md:-mt-20"}>
                     <div className={"col-span-4"}>
-                        <p className={"text-[10px] md:text-lg font-Helvetica tracking-tighter mb-5"}>HIZKIA SIHOMBING</p>
+                        <p className={"text-[14px] md:text-lg font-Helvetica tracking-tighter mt-4 md:mt-0  mb-5"}>HIZKIA SIHOMBING</p>
                         <div className="-mt-4 md:-mt-14 flex gap-8 ">
                         </div>
-                        <h1 className={"tracking-tighter text-[50px] lg:text-[150px] md:text-[120px] "}>
+                        <h1 className={"tracking-tighter text-[80px] lg:text-[150px] md:text-[120px] -mt-20 "}>
                             <div className={"flex gap-3 md:gap-8 items-center leading-[240px] tracking-tighter  "}>
-                                full <span className=' lg:text-[100px] -mx-8 '>&mdash;</span>
+                                full <span className='text-[60px] lg:text-[100px] -mx-3 md:-mx-8 '>&mdash;</span>
                                 <span
-                                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[60px] lg:text-[200px] md:text-[140px]"}>stack</span>
+                                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[120px] lg:text-[200px] md:text-[140px]"}>stack</span>
                             </div>
-                            <p className={"md:-mt-28  tracking-tighter "}>developer</p>
+                            <p className={"-mt-28  tracking-tighter "}>developer</p>
                         </h1>
                     </div>
 
@@ -80,7 +80,7 @@ const Hero = () => {
                         <p>I&apos;m Hizkia Sihombing, a full-stack software engineer specializing in building dynamic
                             web applications. Passionate about creating seamless user experiences across both front-end and
                             back-end development.</p>
-                        <Buttons className={""} content={"Let's discuss"} onClick={() => goToDiv("contact")} />
+                        <Buttons className={"-mt-4 md:mt-0"} content={"Let's discuss"} onClick={() => goToDiv("contact")} />
                     </div>
                 </div>
             </FadeInAnimation>

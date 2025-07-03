@@ -3,27 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { goToDiv } from "@/utils/goToContact";
 import Image from "next/image";
 import { DateTime } from 'luxon';
+import DenpasarClock from '@/utils/denpasarClock';
 
-const DenpasarClock = () => {
-    const [time, setTime] = useState('');
 
-    useEffect(() => {
-        const updateClock = () => {
-            const now = DateTime.now().setZone('Asia/Makassar');
-            setTime(now.toFormat('h:mm a'));
-        };
-
-        updateClock();
-        const interval = setInterval(updateClock, 1000);
-        return () => clearInterval(interval);
-    }, []);
-
-    return <p className="text-gray-500">{time}</p>;
-};
 
 const Navbar = () => {
     return (
-        <nav className="mt-0 md:py-10 text-xs md:text-base h-screen flex flex-col justify-between sticky top-0 !w-[80px] z-10 bg-white ">
+        <nav className="mt-0 hidden md:flex md:py-10 text-xs md:text-base h-screen  flex-col justify-between sticky top-0 !w-[80px] z-10 bg-white ">
             <div>
                 <Image src="/logo/logo.svg" alt="logo" width={0} height={0} className="w-20" />
 

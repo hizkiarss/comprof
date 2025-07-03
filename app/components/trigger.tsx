@@ -124,7 +124,7 @@ export default function Trigger() {
             {triggers.map((trigger, i) => (
                 <div
                     key={trigger.id}
-                    className="relative  border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group rounded-xl overflow-hidden px-4 py-10"
+                    className="relative border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group rounded-xl overflow-hidden px-4 py-10"
                     onMouseEnter={() => handleMouseEnter(trigger)}
                     onMouseLeave={handleMouseLeave}
                     onMouseMove={handleMouseMove}
