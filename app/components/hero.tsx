@@ -60,18 +60,18 @@ const Hero = () => {
 
             </div>
             <FadeInAnimation scroll={false} delay={2.5} >
-                <div className={"lg:grid grid-cols-6 md:-mt-8"}>
+                <div className={"lg:grid grid-cols-6 md:-mt-20"}>
                     <div className={"col-span-4"}>
-                        <p className={"text-[10px] md:text-lg font-Helvetica font-bold"}>HIZKIA SIHOMBING</p>
+                        <p className={"text-[10px] md:text-lg font-Helvetica tracking-tighter mb-5"}>HIZKIA SIHOMBING</p>
                         <div className="-mt-4 md:-mt-14 flex gap-8 ">
                         </div>
-                        <h1 className={"font-Aeonik font-[700] tracking-tight text-[50px] lg:text-[130px] md:text-[120px] "}>
-                            <div className={"flex gap-3 md:gap-8 items-center"}>
-                                FULL
+                        <h1 className={"tracking-tighter text-[50px] lg:text-[150px] md:text-[120px] "}>
+                            <div className={"flex gap-3 md:gap-8 items-center leading-[240px] tracking-tighter  "}>
+                                full <span className=' lg:text-[100px] -mx-8 '>&mdash;</span>
                                 <span
-                                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[60px] lg:text-[180px] md:text-[140px]"}>stack</span>
+                                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[60px] lg:text-[200px] md:text-[140px]"}>stack</span>
                             </div>
-                            <p className={"md:-mt-28"}>DEVELOPER</p>
+                            <p className={"md:-mt-28  tracking-tighter "}>developer</p>
                         </h1>
                     </div>
 

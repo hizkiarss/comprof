@@ -11,12 +11,12 @@ const WhyHire = () => {
 
             <div
                 className="bg-[url('/photos/hirebackground.svg')] bg-contain bg-no-repeat bg-center text-5xl md:text-8xl h-3/5 w-full relative ">
-                <BlurText  text='see' style='bg-opacity-70 font-bold rounded-full mt-5 absolute top-20 left-48' />
-                <BlurText  text='all' style='bg-opacity-70 font-bold rounded-full absolute top-[180px] left-[255px]' />
-                <BlurText  text='the' style='bg-opacity-70 font-bold rounded-full -mt-10 absolute bottom-40 right-60' />
-                <BlurText  text='benefits' style='bg-opacity-70 font-bold rounded-full absolute bottom-20 right-[20px]' />
+                <BlurText  text='see' style='bg-opacity-70 tracking-tight font-bold rounded-full mt-5 absolute top-20 left-48' />
+                <BlurText  text='all' style='bg-opacity-70 tracking-tight font-bold rounded-full absolute top-[180px] left-[255px]' />
+                <BlurText  text='the' style='bg-opacity-70 tracking-tight font-bold rounded-full -mt-10 absolute bottom-40 right-60' />
+                <BlurText  text='benefits' style='bg-opacity tracking-tight-70 font-bold rounded-full absolute bottom-20 right-[20px]' />
 
-              
+              s
             </div>
 
             <div
@@ -25,7 +25,7 @@ const WhyHire = () => {
                     <div>
                         <div className="flex gap-2 items-center md:px-4 py-2">
                             <Brush className="size-4 md:size-7 md:mt-2" />
-                            <h2 className="text-sm md:text-[xl] md:text-3xl font-bold font-Aeonik">
+                            <h2 className="text-sm md:text-[xl] md:text-3xl tracking-tight">
                                 Clean code
                             </h2>
                         </div>
@@ -43,7 +43,7 @@ const WhyHire = () => {
                     <div>
                         <div className={"flex gap-2 items-center md:px-4 py-2"}>
                             <MonitorSmartphone className={"size-6 md:size-7 md:mt-2"} />
-                            <h2 className={"text-sm md:text-[xl] md:text-3xl font-bold font-Aeonik"}>Responsive Design
+                            <h2 className={"text-sm md:text-[xl] md:text-3xl tracking-tight"}>Responsive Design
                             </h2>
                         </div>
 
@@ -62,7 +62,7 @@ const WhyHire = () => {
                     <div>
                         <div className={"flex gap-2 items-center md:px-4 py-2"}>
                             <MonitorCheck className={"size-4 md:size-7 md:mt-2"} />
-                            <h2 className={"text-sm md:text-[xl] md:text-3xl font-bold font-Aeonik "}>Maintainability
+                            <h2 className={"text-sm md:text-[xl] md:text-3xl tracking-tight "}>Maintainability
                             </h2>
                         </div>
 
@@ -83,7 +83,7 @@ const WhyHire = () => {
                     <div>
                         <div className={"flex gap-2 items-center md:px-4 py-2"}>
                             <GitCompareArrows className={"size-4 md:size-7 md:mt-2"} />
-                            <h2 className={"text-sm md:text-[xl] md:text-3xl font-bold font-Aeonik"}>Flexibility
+                            <h2 className={"text-sm md:text-[xl] md:text-3xl tracking-tight"}>Flexibility
                             </h2>
                         </div>
 

@@ -7,8 +7,10 @@ import Image from 'next/image';
 
 
 const triggers = [
-    // { id: 'msa', label: 'MSA Agency', subLabel: 'COMPANY PROFILE WEBSITE', image: '/Social Media Creative Porto 1.png' },
+    { id: 'msa', label: 'MSA Agency', subLabel: 'COMPANY PROFILE WEBSITE', image: '/Social Media Creative Porto 1.png' },
     { id: 'branding', label: 'Branding', subLabel: 'BRAND IDENTITY DESIGN', image: "/photos/Social Media Creative Porto 2.png" },
+    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
+    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
     { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
 ];
 
@@ -105,7 +107,7 @@ export default function Trigger() {
 
             <div className={"md:flex justify-between items-center mb-10"}>
                 <div className={"w-fit"}>
-                    <h2 className={"text-3xl md:text-6xl font-bold font-Aeonik flex items-center md:block gap-3 "}>FEATURED <span
+                    <h2 className={"text-3xl md:text-6xl tracking-tighter flex items-center md:block gap-3 "}>Featured <span
                         className={"-mt-2 md:mt-0 font-Edwardian font-medium text-6xl md:text-8xl "}>projects</span>
                     </h2>
                     {/* <div className={"bg-gradient-to-r from-[#4297AA] to-[#D67221] h-1 rounded-xl -mt-2  "}></div> */}

@@ -7,7 +7,7 @@ const Hero = () => {
         <div className='mt-12'>
             <FadeInAnimation scroll={true}>
                 <div>
-                    <h1 className="tracking-tight leading-tight text-[20px] md:text-[50px]">
+                    <h1 className=" tracking-tight   leading-tight text-[20px] md:text-[50px]">
                         We make awesome interactive experiences with
                         <div className="-mt-8">
                             <span className="inline-block relative mr-4">

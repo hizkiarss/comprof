@@ -10,8 +10,6 @@ import ImageCarousel from '@/app/components/imageCarousel'
 import Trigger from './components/trigger';
 
 
-
-
 const Page = () => {
     return (
         <div className="flex justify-center ">

@@ -2,6 +2,7 @@ import React from 'react'
 import Lottie1 from "./lottie1"
 import Lottie2 from "./lottie2"
 import Lottie3 from "./lottie3"
+import Lottie4 from "./lottie4"
 
 import Buttons from '@/components/buttons'
 import {
@@ -16,7 +17,7 @@ import {
 
 const values = () => {
   return (
-  
+
 
     <div className='bg-white z-40 py-40 '>
       <div>
@@ -25,26 +26,34 @@ const values = () => {
             <span className='ml-4 mr-5 relative flex items-center  font-Edwardian text-[80px]'>
               <div className="w-2 h-2  bg-black rounded-full animate-pulseCircle " />
               fast-output
-            
+
             </span>
             <div className='tracking-tighter absolute top-8 -right-3 font-Helvetica text-sm'>
               01
 
             </div>
           </HoverCardTrigger>
-          <HoverCardContent className='text-base w-[300px] h-[440px] !pb-6 relative flex flex-col justify-end'>
-            <div className='absolute -top-8 -left-4'>
+          <HoverCardContent className='text-base w-[550px] h-[240px] !pb-6 relative flex items-end'>
+            <div className='absolute -left-4 -top-4 '>
               <Lottie1 />
             </div>
-            <div className='text-[40px]'>
-              <p className=' tracking-tight'>all-in-one
 
+            <div className='absolute top-8 left-40 text-[40px]'>
+              <p className='leading-10'>fast
+                <span className='font-Edwardian tracking-wide text-[70px] mx-2 mr-3'>output</span>
+                & <span className='bg-white z-10'>dependable</span>
+                <span className='font-Edwardian tracking-wide text-[70px] ml-2'>service</span>
               </p>
-              <p className='mt-3'>digital<span className='font-Edwardian tracking-wide text-[70px] ml-2'>support</span></p>
             </div>
-            <p className='tracking-tight mt-6'>Our team combines design, development, and marketing expertise to give you a complete digital solution in one place.
-            </p>
-            <Buttons className="mt-5" content='Explore more' />
+
+
+            <div className='flex items-center mt-6 gap-10 '>
+              <p className='tracking-tight  w-[300px]'>We respect your time and deadlines, and so do we with ours. You can count on us to deliver on time, giving the maximum results.
+              </p>
+              <Buttons className="!px-4 !py-2" content='Explore more' />
+            </div>
+
+
           </HoverCardContent>
         </HoverCard> <br />
         </div>
@@ -55,25 +64,31 @@ const values = () => {
               <span className='ml-3 mr-5 relative flex items-center  font-Edwardian tracking-tighter text-[80px] -mt-2'>
                 <div className="w-2 h-2  bg-black rounded-full animate-pulseCircle" />
                 all-in-one
-            
+
               </span>
               <div className='tracking-tighter absolute top-7 -right-[200px] font-Helvetica text-sm'>
                 02
               </div>
             </HoverCardTrigger>
-            <HoverCardContent className='text-base w-[300px] h-[440px] !pb-6 relative flex flex-col justify-end'>
-              <div className='absolute -top-8 -left-4'>
+            <HoverCardContent className='text-base w-[500px] h-[250px] !pb-6 relative flex items-end'>
+              <div className='absolute -left-16 top-4'>
                 <Lottie2 />
               </div>
-              <div className='text-[40px]'>
-                <p className=' tracking-tight'>all-in-one
 
+              <div className='absolute top-12 left-32 text-[40px]'>
+                <p className=' tracking-tight'>all-in-one
                 </p>
                 <p className='mt-3'>digital<span className='font-Edwardian tracking-wide text-[70px] ml-2'>support</span></p>
               </div>
-              <p className='tracking-tight mt-6'>Our team combines design, development, and marketing expertise to give you a complete digital solution in one place.
-              </p>
-              <Buttons className="mt-5" content='Explore more' />
+
+
+              <div className='flex items-center mt-6 '>
+                <p className='tracking-tight  w-[300px]'>Our team combines design, development, and marketing expertise to give you a complete digital solution in one place.
+                </p>
+                <Buttons className="!px-4 !py-2" content='Explore more' />
+              </div>
+
+
             </HoverCardContent>
           </HoverCard> solutions</div>
 
@@ -92,24 +107,28 @@ const values = () => {
                 </div>
               </span>
             </HoverCardTrigger>
-            <HoverCardContent className='text-base w-[300px] h-[440px] !pb-6 relative flex flex-col justify-end'>
-              <div className='absolute -top-8 -left-4'>
+            <HoverCardContent className='text-base w-[500px] h-[250px] !pb-6 relative flex items-end'>
+              <div className='absolute -translate-x-1/3 left-4 -top-20'>
                 <Lottie3 />
               </div>
-              <div className='text-[40px] tracking-tighter'>
-                <p className=''>budget-friendly
+
+              <div className='absolute top-8 left-32 text-[40px]'>
+                <p className='mt-3 leading-9'>budget friendly
+                  <br />
+                  <span className='font-Edwardian tracking-wide text-[70px] -ml-1'>solutions</span></p>
+              </div>
+
+
+              <div className='flex items-center mt-6 '>
+                <p className='tracking-tight  w-[300px]'>We understand the constraints of small businesses. That’s why we offer efficient, high-value services balanced with a fair rate.
 
                 </p>
-                <p className='mt-3'>digital<span className='font-Edwardian tracking-wide text-[70px] ml-2'>support</span></p>
+                <Buttons className="!px-4 !py-2" content='Explore more' />
               </div>
-              <p className='tracking-tight mt-6'>Our team combines design, development, and marketing expertise to give you a complete digital solution in one place.
-              </p>
-              <Buttons className="mt-5" content='Explore more' />
+
+
             </HoverCardContent>
           </HoverCard> and   </div>
-
-
-
 
 
         <div className='-mt-8 flex items-center justify-center gap-4'>
@@ -124,19 +143,25 @@ const values = () => {
                 </div>
               </span>
             </HoverCardTrigger>
-            <HoverCardContent className='text-base w-[300px] h-[440px] !pb-6 relative flex flex-col justify-end'>
-              <div className='absolute -top-8 -left-4'>
-                <Lottie1 />
+            <HoverCardContent className='text-base w-[500px] h-[260px] !pb-6 relative flex items-end'>
+              <div className='absolute -left-3 top-0 '>
+                <Lottie4 />
               </div>
-              <div className='text-[40px] tracking-tighter'>
-                <p className=''>budget-friendly
+
+              <div className='absolute top-3 left-32 text-[40px] leading-9 '>
+                <p className='mt-3 tracking-tighter'>clear <br /> communication, <br />
+                  <span className='font-Edwardian tracking-wide text-[70px] -ml-1'>always</span></p>
+              </div>
+
+
+              <div className='flex items-center mt-6 '>
+                <p className='tracking-tight  w-[300px]'>We speak your language, no big terms, no stiff corporate stuff. Just honest, transparent conversations and reliable support.
 
                 </p>
-                <p className='mt-3'>digital<span className='font-Edwardian tracking-wide text-[70px] ml-2'>support</span></p>
+                <Buttons className="!px-4 !py-2" content='Explore more' />
               </div>
-              <p className='tracking-tight mt-6'>Our team combines design, development, and marketing expertise to give you a complete digital solution in one place.
-              </p>
-              <Buttons className="mt-5" content='Explore more' />
+
+
             </HoverCardContent>
           </HoverCard>
 
@@ -148,7 +173,7 @@ const values = () => {
       </div>
 
 
-      
+
 
 
     </div>

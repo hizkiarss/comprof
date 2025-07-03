@@ -75,8 +75,8 @@ const HorizontalCarousel = () => {
                 className="relative w-full overflow-hidden h-screen flex flex-col  justify-start mt-20 pl-10"
             >
 
-                <p className="font-bold text-[40px]">SEE WHAT WE CAN <span
-                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[80px]"}>bring</span> TO THE
+                <p className=" text-[50px] tracking-tighter">See what we can  <span
+                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[80px]"}>bring</span> to the
                     <span
                         className={"font-Edwardian tracking-wide font-medium md:-mb-3 ml-3 text-[80px]"}>table.</span> </p>
                 <div

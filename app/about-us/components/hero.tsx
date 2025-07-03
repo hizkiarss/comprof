@@ -96,7 +96,7 @@ const Hero = () => {
     ];
 
     return (
-        <div className='h-screen pt-12 py-10 relative bg-white'>
+        <div className='h-screen pt-10 relative bg-white'>
             <div className='h-full w-[1140px] flex flex-col relative'>
                 <FadeInAnimation delay={2.5}>
                     <div className='flex justify-center gap-12  z-0'>

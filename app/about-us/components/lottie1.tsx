@@ -2,6 +2,10 @@
 import Lottie from "lottie-react";
 import animationData from "@/public/Lottie/lottie1.json"
 
+
+
+
+
 export default function Lottie1() {
   return (
     <div className=" ">
