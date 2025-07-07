@@ -105,13 +105,13 @@ export default function Trigger() {
     return (
         <div className="relative mt-20">
 
-            <div className={"md:flex justify-between items-center mb-10"}>
+            <div className={"md:flex justify-between items-center mb-5 md:mb-10"}>
                 <div className={"w-fit"}>
-                    <h2 className={"text-3xl md:text-6xl tracking-tighter flex items-center md:block gap-3 "}>Featured <span
+                    <h2 className={"text-[32px] md:text-6xl tracking-tighter flex items-center ml-4 md:ml-0 md:block gap-3 "}>Featured <span
                         className={"-mt-2 md:mt-0 font-Edwardian font-medium text-6xl md:text-8xl "}>projects</span>
                     </h2>
                     {/* <div className={"bg-gradient-to-r from-[#4297AA] to-[#D67221] h-1 rounded-xl -mt-2  "}></div> */}
-                    <div className={"bg-black h-1 rounded-xl -mt-2  "}></div>
+                    <div className={"bg-black h-1 rounded-xl ml-4 md:ml-0 -mt-2 w-full  "}></div>
 
                 </div>
 
@@ -124,7 +124,7 @@ export default function Trigger() {
             {triggers.map((trigger, i) => (
                 <div
                     key={trigger.id}
-                    className="relative border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group rounded-xl overflow-hidden px-4 py-10"
+                    className="relative border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200 cursor-pointer group rounded-xl overflow-hidden px-4 py-5 md:py-10"
                     onMouseEnter={() => handleMouseEnter(trigger)}
                     onMouseLeave={handleMouseLeave}
                     onMouseMove={handleMouseMove}
@@ -133,7 +133,7 @@ export default function Trigger() {
                         className="absolute inset-0 bg-black group-hover:scale-100 origin-bottom transition-transform duration-1000 ease-in-out z-0
                             scale-y-0 group-data-[state=open]:scale-y-100"
                     />
-                    <div className="flex justify-between items-center  relative overflow-hidden group text-black group-hover:text-white text-5xl  ">
+                    <div className="flex justify-between items-center  relative overflow-hidden group text-black group-hover:text-white text-3xl md:text-5xl  ">
 
                         <div className="flex items-center gap-4">
                             <div className="">
@@ -146,7 +146,7 @@ export default function Trigger() {
                         <div className="flex items-center gap-4">
 
 
-                            <div className="text-[7px] md:text-base tracking-tighter font-Helvetica border-2 rounded-full px-2 py-1 md:px-6 md:py-3 z-20 
+                            <div className="text-[8px] md:text-base tracking-tight font-Helvetica border-2 rounded-full px-2 py-1 md:px-6 md:py-3 z-20 
                         transition-all duration-1000 text-black group-hover:text-white group-hover:border-white
                     group-data-[state=open]:text-white group-data-[state=open]:border-white">
                                 {trigger.subLabel}
@@ -160,7 +160,7 @@ export default function Trigger() {
             {/* Pop effect on cursor-follow image with smooth delayed movement */}
             {hoveredTrigger && (
                 <div
-                    className="fixed pointer-events-none z-50 transition-all duration-400 ease-out"
+                    className="hidden md:fixed pointer-events-none z-50 transition-all duration-400 ease-out"
                     style={{
                         left: coords.x + 20,
                         top: coords.y - 100,
