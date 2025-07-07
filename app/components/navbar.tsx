@@ -1,8 +1,7 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { goToDiv } from "@/utils/goToContact";
 import Image from "next/image";
-import { DateTime } from 'luxon';
 import DenpasarClock from '@/utils/denpasarClock';
 
 

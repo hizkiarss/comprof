@@ -9,7 +9,7 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 
 const Hero = () => {
     return (
-        <div className=" h-screen flex flex-col justify-between mx-2  ">
+        <div className=" h-screen flex flex-col justify-between mx-2 md:mt-10 ">
             <div className={"md:grid grid-cols-3 gap-2 md:gap-3 flex justify-center  "}>
                 <div className="bg-black rounded-xl border-[#D9DBF1] h-[300px] w-full z-20 relative overflow-hidden ">
                     <MetaBalls
@@ -62,10 +62,10 @@ const Hero = () => {
             <FadeInAnimation scroll={false} delay={2.5} >
                 <div className={"lg:grid grid-cols-6 md:-mt-20"}>
                     <div className={"col-span-4"}>
-                        <p className={"text-[14px] md:text-lg font-Helvetica tracking-tighter mt-4 md:mt-0  mb-5"}>HIZKIA SIHOMBING</p>
+                        <p className={"text-[14px] md:text-lg font-Helvetica tracking-tighter mt-4 md:-mt-24  mb-5"}>HIZKIA SIHOMBING</p>
                         <div className="-mt-4 md:-mt-14 flex gap-8 ">
                         </div>
-                        <h1 className={"tracking-tighter text-[80px] lg:text-[150px] md:text-[120px] -mt-20 "}>
+                        <h1 className={"tracking-tighter text-[80px] lg:text-[150px] md:text-[120px] -mt-20 md:mt-0 "}>
                             <div className={"flex gap-3 md:gap-8 items-center leading-[240px] tracking-tighter  "}>
                                 full <span className='text-[60px] lg:text-[100px] -mx-3 md:-mx-8 '>&mdash;</span>
                                 <span
@@ -76,7 +76,7 @@ const Hero = () => {
                     </div>
 
                     <div
-                        className={"col-span-2 text-xs md:text-[15px] flex flex-col md:pt-24 gap-8 font-Helvetica md:leading-6"}>
+                        className={"col-span-2 text-xs md:text-[15px] flex flex-col md:pt-8 gap-8 font-Helvetica md:leading-6"}>
                         <p>I&apos;m Hizkia Sihombing, a full-stack software engineer specializing in building dynamic
                             web applications. Passionate about creating seamless user experiences across both front-end and
                             back-end development.</p>

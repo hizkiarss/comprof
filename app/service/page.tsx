@@ -11,10 +11,7 @@ const page = () => {
       <div className="flex gap-10  w-[1280px] ">
         <Navbar />
         <div className=" w-[1140px]">
-
           <Hero />
-          
-
           <Title/>
           <Website />
           <Socmed/>

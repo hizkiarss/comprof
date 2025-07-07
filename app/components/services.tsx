@@ -67,33 +67,34 @@ const HorizontalCarousel = () => {
 
 
     return (
-        <div className="relative">
-
+        <div className="relative mt-10 ">
 
             <div
                 ref={containerRef}
-                className="relative w-full overflow-hidden h-screen flex flex-col  justify-start mt-20 pl-10"
+                className="relative w-full md:overflow-hidden  flex flex-col  justify-start mt-0 md:mt-20 mt:pl-10"
             >
 
-                <p className=" text-[50px] tracking-tighter">See what we can  <span
-                    className={"font-Edwardian tracking-wide font-medium md:-mb-3 text-[80px]"}>bring</span> to the
+                <p className="text-[32px] md:text-[50px] leading-9 md:leading-normal tracking-tighter mx-2 md:mx-0">See what we can <br className="block md:hidden"/> <span
+                    className={"font-Edwardian tracking-tight font-medium md:-mb-3 text-[62px] md:text-[80px] mr-2 md:mr-0"}>bring</span> to the
                     <span
-                        className={"font-Edwardian tracking-wide font-medium md:-mb-3 ml-3 text-[80px]"}>table.</span> </p>
-                <div
+                        className={"font-Edwardian tracking-wide font-medium md:-mb-3 ml-3 text-[62px] md:text-[80px] "}>table.</span> </p>
+                
+              <div className="overflow-x-auto">
+                 <div
                     ref={sliderRef}
-                    className="flex w-max items-center gap-10 "
+                    className="flex flex-row w-max justify-start md:items-center gap-10 mt-6 md:mt-0"
                 >
 
-                    <div className="panel w-[1000px] rounded-xl px-6 py-6 ">
+                    <div className="panel w-screen md:w-[1000px] rounded-xl mx-2 px-2 md:px-6 py-6 ">
                         <div className="text-4xl">
-                            <div className="flex gap-4 h-[408px]">
-                                <div className="overflow-hidden rounded-xl relative group">
+                            <div className="flex gap-4 h-[200px] md:h-[408px]">
+                                <div className="overflow-hidden rounded-xl md:h-fit h-[200px] relative   group">
                                     <Image
                                         src="/photos/Social Media Creative Porto 1.png"
                                         alt="slide"
                                         width={800}
                                         height={800}
-                                        className="w-[800px] h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
+                                        className="w-[400px] h-[200px] md:w-[800px] md:h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
                                     />
                                     <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                         <ArrowUpRight className="size-6 shrink-0" />
@@ -106,7 +107,7 @@ const HorizontalCarousel = () => {
                                 <div className="flex flex-col gap-2 h-[408px]">
                                     <div className="overflow-hidden rounded-xl relative group">
                                         <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200} alt="slide"
-                                            className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
+                                            className=" w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                             <ArrowUpRight className="size-6 shrink-0" />
@@ -118,7 +119,7 @@ const HorizontalCarousel = () => {
 
                                     <div className="overflow-hidden rounded-xl relative group">
                                         <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200} alt="slide"
-                                            className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
+                                            className="w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                             <ArrowUpRight className="size-6 shrink-0" />
@@ -130,28 +131,28 @@ const HorizontalCarousel = () => {
                                 </div>
                             </div>
 
-                            <div className="mt-4 flex gap-20 items-center">
+                            <div className="mt-4 flex flex-col md:flex-row md:gap-20 items-start md:items-center">
                                 <div className="flex gap-2 items-center leading-[0.95]">
-                                    <h3 className="tracking-tight mt-1 text-[60px]">01.</h3>
-                                    <h3 className="tracking-tight mt-1 text-[30px]">Website <br /> Development</h3>
+                                    <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">01.</h3>
+                                    <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Website <br /> Development</h3>
                                 </div>
                                 <div>
-                                    <p className="text-base mt-2">I help businesses grow online by building fast, responsive, and SEO-optimized websites using modern technologies like React, Next.js, and Laravel—designed to deliver seamless user experiences, improve performance, and convert visitors into customers.</p>
+                                    <p className="text-sm md:text-base mt-4 md:mt-2">I help businesses grow online by building fast, responsive, and SEO-optimized websites using modern technologies like React, Next.js, and Laravel—designed to deliver seamless user experiences, improve performance, and convert visitors into customers.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="panel w-[1000px] rounded-xl px-6 py-6 mt-2">
+                     <div className="panel w-screen md:w-[1000px] rounded-xl mx-2 px-2 md:px-6 py-6 ">
                         <div className="text-4xl">
-                            <div className="flex gap-4 h-[408px]">
-                                <div className="overflow-hidden rounded-xl relative group">
+                            <div className="flex gap-4 h-[200px] md:h-[408px]">
+                                <div className="overflow-hidden rounded-xl md:h-fit h-[200px] relative   group">
                                     <Image
                                         src="/photos/Social Media Creative Porto 1.png"
                                         alt="slide"
                                         width={800}
                                         height={800}
-                                        className="w-[800px] h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
+                                        className="w-[400px] h-[200px] md:w-[800px] md:h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
                                     />
                                     <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                         <ArrowUpRight className="size-6 shrink-0" />
@@ -163,11 +164,8 @@ const HorizontalCarousel = () => {
 
                                 <div className="flex flex-col gap-2 h-[408px]">
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src="/photos/Social Media Creative Porto 2.png"
-                                            alt="slide"
-                                            width={400}
-                                            height={200}
-                                            className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
+                                        <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200} alt="slide"
+                                            className=" w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                             <ArrowUpRight className="size-6 shrink-0" />
@@ -178,11 +176,8 @@ const HorizontalCarousel = () => {
                                     </div>
 
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src="/photos/Social Media Creative Porto 3.png"
-                                        alt="slide"
-                                        width={400}
-                                        height={200}
-                                            className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
+                                        <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200} alt="slide"
+                                            className="w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                             <ArrowUpRight className="size-6 shrink-0" />
@@ -194,28 +189,28 @@ const HorizontalCarousel = () => {
                                 </div>
                             </div>
 
-                            <div className="mt-4 flex gap-20 items-center">
+                            <div className="mt-4 flex flex-col md:flex-row md:gap-20 items-start md:items-center">
                                 <div className="flex gap-2 items-center leading-[0.95]">
-                                    <h3 className="tracking-tight mt-1 text-[60px]">02.</h3>
-                                    <h3 className="tracking-tight mt-1 text-[30px]">Social Media <br /> Management</h3>
+                                    <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">01.</h3>
+                                    <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Website <br /> Development</h3>
                                 </div>
                                 <div>
-                                    <p className="text-base mt-2">Creating engaging social media strategies that build brand awareness, foster community engagement, and drive meaningful connections with your target audience across all platforms.</p>
+                                    <p className="text-sm md:text-base mt-4 md:mt-2">I help businesses grow online by building fast, responsive, and SEO-optimized websites using modern technologies like React, Next.js, and Laravel—designed to deliver seamless user experiences, improve performance, and convert visitors into customers.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="panel w-[1000px] rounded-xl px-6 py-6 mt-2">
+                     <div className="panel w-screen md:w-[1000px] rounded-xl mx-2 px-2 md:px-6 py-6 ">
                         <div className="text-4xl">
-                            <div className="flex gap-4 h-[408px]">
-                                <div className="overflow-hidden rounded-xl relative group">
+                            <div className="flex gap-4 h-[200px] md:h-[408px]">
+                                <div className="overflow-hidden rounded-xl md:h-fit h-[200px] relative   group">
                                     <Image
                                         src="/photos/Social Media Creative Porto 1.png"
                                         alt="slide"
                                         width={800}
                                         height={800}
-                                        className="w-[800px] h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
+                                        className="w-[400px] h-[200px] md:w-[800px] md:h-full object-cover object-top rounded-xl transform transition duration-300 group-hover:scale-105 origin-center"
                                     />
                                     <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                         <ArrowUpRight className="size-6 shrink-0" />
@@ -227,11 +222,8 @@ const HorizontalCarousel = () => {
 
                                 <div className="flex flex-col gap-2 h-[408px]">
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src="/photos/Social Media Creative Porto 2.png"
-                                            alt="slide"
-                                            width={400}
-                                            height={200}
-                                            className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
+                                        <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200} alt="slide"
+                                            className=" w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                             <ArrowUpRight className="size-6 shrink-0" />
@@ -242,11 +234,8 @@ const HorizontalCarousel = () => {
                                     </div>
 
                                     <div className="overflow-hidden rounded-xl relative group">
-                                        <Image src="/photos/Social Media Creative Porto 1.png"
-                                            alt="slide"
-                                            width={400}
-                                            height={200}
-                                            className="w-[400px] h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
+                                        <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200} alt="slide"
+                                            className="w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                         />
                                         <div className="absolute bottom-4 right-4 bg-white rounded-full overflow-hidden flex items-center transition-all duration-300 w-12 h-12 group-hover:w-[120px] px-3">
                                             <ArrowUpRight className="size-6 shrink-0" />
@@ -258,27 +247,31 @@ const HorizontalCarousel = () => {
                                 </div>
                             </div>
 
-                            <div className="mt-4 flex gap-20 items-center">
+                            <div className="mt-4 flex flex-col md:flex-row md:gap-20 items-start md:items-center">
                                 <div className="flex gap-2 items-center leading-[0.95]">
-                                    <h3 className="tracking-tight mt-1 text-[60px]">03.</h3>
-                                    <h3 className="tracking-tight mt-1 text-[30px]">Brand <br /> Strategy</h3>
+                                    <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">01.</h3>
+                                    <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Website <br /> Development</h3>
                                 </div>
                                 <div>
-                                    <p className="text-base mt-2">Developing comprehensive brand strategies that define your unique value proposition, visual identity, and messaging to create lasting impressions and drive business growth.</p>
+                                    <p className="text-sm md:text-base mt-4 md:mt-2">I help businesses grow online by building fast, responsive, and SEO-optimized websites using modern technologies like React, Next.js, and Laravel—designed to deliver seamless user experiences, improve performance, and convert visitors into customers.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+
+                
                 </div>
+                </div> 
 
 
-                <div className="flex justify-end">
+                {/* <div className="flex justify-end">
                     <div className=" gap-2 mt-1 bg-black text-white rounded-full px-3 py-2 text-xs flex ">
                         <p> Scroll for more</p>
                         <Image width={16}
                                 height={16} src="/photos/right-arrow.png" alt="arrow-right" className="w-4 invert" />
                     </div>
-                </div>
+                </div> */}
 
 
 

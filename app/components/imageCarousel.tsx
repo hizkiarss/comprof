@@ -53,7 +53,7 @@ const ImageCarousel = () => {
                     {portfolioItems.map((item) => (
                         <CarouselItem 
                             key={item.id} 
-                            className='relative group h-[550px] w-full overflow-hidden rounded-xl'
+                            className='relative group h-[550px] w-full overflow-hidden rounded-tr-[40px] md:rounded-xl'
                         >
                             <Image 
                                 width={2000}
@@ -67,7 +67,7 @@ const ImageCarousel = () => {
                             {item.badges.map((badge, badgeIndex) => (
                                 <Badge 
                                     key={badgeIndex}
-                                    className={`absolute left-8 rounded-2xl py-2 px-3 font-Aeonik text-xs font-normal opacity-0 group-hover:opacity-100 transition-all duration-500`}
+                                    className={`absolute left-8 rounded-2xl py-2 px-3 font-Aeonik text-xs font-normal opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500`}
                                     style={{ top: `${16 + (badgeIndex * 40)}px` }}
                                     variant="secondary"
                                 >
@@ -80,8 +80,8 @@ const ImageCarousel = () => {
                     ))}
                 </CarouselContent>
                 
-                <CarouselPrevious className='!right-10 -top-10 -translate-y-1/2 bg-black text-white' />
-                <CarouselNext className='!right-0 -top-10 -translate-y-1/2 bg-black text-white' />
+                <CarouselPrevious className='!right-12 md:!right-10 -top-8 md:-top-10 -translate-y-1/2 bg-black text-white' />
+                <CarouselNext className='!right-2 md:!right-0 -top-8 md:-top-10 -translate-y-1/2 bg-black text-white' />
             </Carousel>
         </div>
     )
