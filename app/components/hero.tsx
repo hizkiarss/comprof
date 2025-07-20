@@ -9,7 +9,7 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 
 const Hero = () => {
     return (
-        <div className="-mt-[200px] mb-60  md:mb-0 md:mt-10 h-screen flex flex-col justify-between mx-4   ">
+        <div className="-mt-[200px] md:mb-0 md:mt-10 h-screen flex flex-col justify-between mx-4   ">
             <div className={"mt-[200px] md:mt-0 md:grid grid-cols-3 gap-2 md:gap-3 flex justify-center   "}>
                 <div className="bg-black rounded-xl border-[#D9DBF1] h-[300px] w-full z-20 relative overflow-x-hidden ">
                     <MetaBalls  
