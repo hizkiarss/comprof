@@ -60,7 +60,7 @@ const Hero = () => {
 
             </div>
             <FadeInAnimation scroll={false} delay={2.5} >
-                <div className={"lg:grid grid-cols-6 md:-mt-20"}>
+                <div className={"lg:grid grid-cols-6 mt-4 md:-mt-20"}>
                     <div className={"col-span-4"}>
                         <p className={"text-[14px] md:text-lg font-Helvetica tracking-tighter mt-4 md:-mt-24  mb-5"}>HIZKIA SIHOMBING</p>
                         <div className="-mt-4 md:-mt-14 flex gap-8 ">
