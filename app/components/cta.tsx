@@ -47,29 +47,29 @@ const Cta = () => {
             <div className='relative flex flex-col justify-between items-center group h-[600px]'>
                 <p className='text-[20px] z-20'>Big ideas need bold support.</p>
                 
-                <p className={`text-[50px] transition-all duration-1000 tracking-tighter w-fit absolute top-48 px-4 left-16 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] transition-all duration-1000 tracking-tighter w-fit absolute top-20 md:top-48 px-4 left-16 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     call
                 </p>
 
                 <div
-                    className={`w-[1140px] bg-white absolute left-1/2 transform -translate-x-1/2 z-10 flex justify-center transition-all duration-1000 
-                    ${isVisible ? "bottom-64" : "-bottom-32"}`}
+                    className={`w-[450px] md:w-[1140px] bg-white absolute   transform  z-10 flex justify-center transition-all duration-1000 
+                    ${isVisible ? "bottom-72 md:bottom-40" : "-bottom-32"}`}
                 >
                     <Image
-                        width={1000}
+                        width={600}
                         height={500}
                         src="/photos/logoBottom.png"
-                        className='w-[500px] md:w-[1000px] md:h-[500px] object-cover'
+                        className='ml-[20px] md:w-[900px] object-cover'
                         alt=''
                     />
                 </div>
 
-                <p className={`text-[50px] transition-all duration-1000 tracking-tighter absolute top-48 px-4 right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     now.
                 </p>
 
                 <div
-                    className={`flex md:flex-row flex-col justify-between gap-10 w-full my-10 transition-all duration-1000 
+                    className={`flex md:flex-row flex-col justify-between gap-2 md:gap-10 w-full md:my-10 transition-all duration-1000 
                     ${isVisible ? "opacity-100" : "opacity-0"}`}
                 >
                     {/* Links */}
@@ -81,14 +81,14 @@ const Cta = () => {
                     >
                         <button className="flex justify-between w-full">
                             <div className="text-start">
-                                <p className="font-bold text-sm md:text-xl">Github</p>
+                                <p className="font-bold text-lg md:text-xl">Github</p>
                                 <p className="text-xs md:text-base">github.com/hizkiarss</p>
                             </div>
                             <Image
                                 width={100}
                                 height={100}
                                 src="/logo/githubwhite.png"
-                                className="h-8 md:h-12 w-fit invert"
+                                className="h-10 md:h-12 w-fit invert"
                                 alt="Github Logo"
                             />
                         </button>
@@ -102,14 +102,14 @@ const Cta = () => {
                     >
                         <button className="flex justify-between w-full items-center">
                             <div className="text-start">
-                                <p className="font-bold text-sm md:text-xl">Gmail</p>
+                                <p className="font-bold text-lg md:text-xl">Gmail</p>
                                 <p className="text-xs md:text-base">hizkiarssihombing@gmail.com</p>
                             </div>
                             <Image
                                 src="/logo/gmailwhite.png"
                                 width={100}
                                 height={100}
-                                className="h-6 md:h-10 w-fit invert z-0"
+                                className="h-8 md:h-10 w-fit invert z-0"
                                 alt="Gmail Logo"
                             />
                         </button>
@@ -123,14 +123,14 @@ const Cta = () => {
                     >
                         <button className="flex justify-between w-full items-center">
                             <div className="text-start">
-                                <p className="font-bold text-sm md:text-xl">Linkedin</p>
+                                <p className="font-bold text-lg md:text-xl">Linkedin</p>
                                 <p className="text-xs md:text-base">linkedin.com/in/hizkiasihombing/</p>
                             </div>
                             <Image
                                 src="/logo/linkedinwhite.png"
                                 width={100}
                                 height={100}
-                                className="h-8 md:h-10 w-fit invert z-0"
+                                className="h-10 md:h-10 w-fit invert z-0"
                                 alt="Linkedin Logo"
                             />
                         </button>

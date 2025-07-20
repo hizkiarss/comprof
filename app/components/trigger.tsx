@@ -7,11 +7,11 @@ import Image from 'next/image';
 
 
 const triggers = [
-    { id: 'msa', label: 'MSA Agency', subLabel: 'COMPANY PROFILE WEBSITE', image: '/Social Media Creative Porto 1.png' },
+    { id: 'msa', label: 'MSA Agency', subLabel: 'COMPANY PROFILE WEBSITE', image: '/photos/Social Media Creative Porto 1.png' },
     { id: 'branding', label: 'Branding', subLabel: 'BRAND IDENTITY DESIGN', image: "/photos/Social Media Creative Porto 2.png" },
     { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
-    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
-    { id: 'webdev', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
+    { id: 'webdev2', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
+    { id: 'webdev3', label: 'Web Development', subLabel: 'FULLSTACK SOLUTIONS', image: "/photos/Social Media Creative Porto 3.png" },
 ];
 
 export default function Trigger() {
@@ -133,7 +133,7 @@ export default function Trigger() {
                         className="absolute inset-0 bg-black group-hover:scale-100 origin-bottom transition-transform duration-1000 ease-in-out z-0
                             scale-y-0 group-data-[state=open]:scale-y-100"
                     />
-                    <div className="flex justify-between items-center  relative overflow-hidden group text-black group-hover:text-white text-3xl md:text-5xl  ">
+                    <div className=" md:flex justify-between items-center  relative overflow-hidden group text-black group-hover:text-white text-3xl md:text-5xl  ">
 
                         <div className="flex items-center gap-4">
                             <div className="">
@@ -146,7 +146,7 @@ export default function Trigger() {
                         <div className="flex items-center gap-4">
 
 
-                            <div className="text-[8px] md:text-base tracking-tight font-Helvetica border-2 rounded-full px-2 py-1 md:px-6 md:py-3 z-20 
+                            <div className="hidden md:block mt-4 md:mt-0 text-sm md:text-base tracking-tight font-Helvetica border-2 rounded-full px-2 py-1 md:px-6 md:py-3 z-20 
                         transition-all duration-1000 text-black group-hover:text-white group-hover:border-white
                     group-data-[state=open]:text-white group-data-[state=open]:border-white">
                                 {trigger.subLabel}
@@ -160,7 +160,7 @@ export default function Trigger() {
             {/* Pop effect on cursor-follow image with smooth delayed movement */}
             {hoveredTrigger && (
                 <div
-                    className="hidden md:fixed pointer-events-none z-50 transition-all duration-400 ease-out"
+                    className="fixed pointer-events-none z-50 transition-all duration-400 ease-out"
                     style={{
                         left: coords.x + 20,
                         top: coords.y - 100,
@@ -168,7 +168,7 @@ export default function Trigger() {
                         opacity: isVisible ? 1 : 0,
                     }}
                 >
-                    <div className="bg-white rounded-lg shadow-2xl overflow-hidden border">
+                    <div className="bg-white rounded-lg shadow-2xl overflow-hidden ">
                         <Image
                             width={100}
                             height={100}

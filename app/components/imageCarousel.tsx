@@ -53,7 +53,7 @@ const ImageCarousel = () => {
                     {portfolioItems.map((item) => (
                         <CarouselItem 
                             key={item.id} 
-                            className='relative group h-[550px] w-full overflow-hidden rounded-tr-[40px] md:rounded-xl'
+                            className='relative group h-[350px] md:h-[550px] w-full overflow-hidden rounded-tr-[40px] md:rounded-xl'
                         >
                             <Image 
                                 width={2000}
