@@ -47,12 +47,12 @@ const Cta = () => {
             <div className='relative flex flex-col justify-between items-center group h-[600px]'>
                 <p className='text-[20px] z-20'>Big ideas need bold support.</p>
                 
-                <p className={`text-[50px] transition-all duration-1000 tracking-tighter w-fit absolute top-20 md:top-48 px-4 left-16 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] rotate-3 md:rotate-0 transition-all duration-1000 tracking-tighter w-fit absolute top-16 md:top-48 px-4 left-16 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     call
                 </p>
 
                 <div
-                    className={`w-[450px] md:w-[1140px] bg-white absolute   transform  z-10 flex justify-center transition-all duration-1000 
+                    className={`w-[450px] md:w-[1140px] bg-white absolute  transform  z-10 flex justify-center transition-all duration-1000 
                     ${isVisible ? "bottom-72 md:bottom-40" : "-bottom-32"}`}
                 >
                     <Image
@@ -64,7 +64,7 @@ const Cta = () => {
                     />
                 </div>
 
-                <p className={`text-[50px] transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] -rotate-6 md:rotate-0 transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     now.
                 </p>
 
