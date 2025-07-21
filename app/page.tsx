@@ -13,7 +13,7 @@ import NavbarMobile from "./components/navbarMobile"
 
 const Page = () => {
     return (
-        <div className="flex justify-center ">
+        <div className="overflow-x-hidden md:overflowx-auto flex justify-center ">
             <div className="block md:flex gap-10  max-w-[1280px] ">
                 <Navbar />
                 <NavbarMobile/>
