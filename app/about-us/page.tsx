@@ -5,26 +5,31 @@ import CursorFollower from '@/app/components/cursorFollower'
 import FAQ from './components/faq'
 import Values from './components/values'
 import Cta from '../components/cta';
+import NavbarMobile from "@/app/components/navbarMobile"
+import ValuesDescriptionMobile from "@/app/about-us/components/valuesDescriptionMobile";
+
 
 const Page = () => {
     return (
-        <div className="flex justify-center relative  ">
-            <div className="flex gap-10 max-w-[1280px] ">
+        <div className="  md:flex justify-center relative  ">
+            <div className="md:flex gap-10 max-w-[1280px] ">
                 <Navbar />
+                <NavbarMobile />
                 <div className="overflow-hidden max-w-[1140px] ">
                     <div className="relative z-20">
                         <CursorFollower />
                         <Hero />
                         <Values />
+                        <ValuesDescriptionMobile/>
                     </div>
 
                     <div className="relative h-screen bg-transparent pt-10">
 
                     </div>
-                    s
+
                     <video
                         src="/video/sosmed1.mp4"
-                        className="fixed top-0 h-screen  object-cover w-[1140px]  z-10"
+                        className="fixed top-32 md:top-0 h-screen  object-cover  md:w-[1140px]  "
                         autoPlay
                         loop
                         muted

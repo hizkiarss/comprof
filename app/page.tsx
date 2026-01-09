@@ -13,14 +13,14 @@ import NavbarMobile from "./components/navbarMobile"
 
 const Page = () => {
     return (
-        <div className="overflow-x-hidden md:overflowx-auto flex justify-center ">
+        <div className="flex justify-center ">
             <div className="block md:flex gap-10  max-w-[1280px] ">
                 <Navbar />
                 <NavbarMobile/>
                 <div className="overflow-hidden max-w-[1140px]">
                     <CursorFollower />
                     <Hero />
-                    <div className='mt-20 md:mt-32'>
+                    <div className='mt-52 md:mt-32'>
                         <Hero2 />
                         <ImageCarousel />
                     </div>

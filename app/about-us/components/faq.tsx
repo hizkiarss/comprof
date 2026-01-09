@@ -60,12 +60,12 @@ const Faq = () => {
     return (
         <section className="w-full min-h-screen flex flex-col  py-10">
 
-            <div className='text-[50px] tracking-tighter'>
+            <div className='text-[50px] tracking-tighter mb-10 px-2 lg:px-0'>
                 <FadeInAnimation scroll={true} vertical={true} delay={0.5}>
                     <p className='gap-6'><span className='font-Edwardian tracking-wide text-[90px]'>ask</span> away&mdash;
                     </p></FadeInAnimation>
                 <FadeInAnimation scroll={true} vertical={true} delay={0.8}>
-                    <p className=' -mt-20'>we &apos; re here to<span className='font-Edwardian tracking-wide text-[90px] ml-3'>help</span>.</p>
+                    <p className='-mt-9 lg:-mt-20 leading-[50px] '>we &apos; re here <span className={'-mt-12'}>to<span className='font-Edwardian tracking-wide text-[90px] ml-3'>help</span></span>.</p>
                 </FadeInAnimation>
             </div>
 
@@ -92,7 +92,7 @@ const Faq = () => {
                         </AccordionTrigger>
 
                         <AccordionContent className="px-4 pb-6 pt-2 bg-white/70 backdrop-blur-sm ">
-                            <p className="text-base tracking-tight my-8 w-2/3">
+                            <p className="text-base tracking-tight my-8 w-full lg:w-2/3">
                                 {answer}
                             </p>
                         </AccordionContent>

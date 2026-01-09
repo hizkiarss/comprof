@@ -18,17 +18,15 @@ import {
 const values = () => {
   return (
 
-
-    <div className='bg-white z-40 py-40 '>
+    <div className='bg-white z-40 md:py-40 px-2 md:px-0  '>
       <div>
-        <div className='text-[50px] ml-32 tracking-tighter flex items-center'>We provide <HoverCard>
+        <div className='text-[32px] md:text-[50px] md:ml-32 tracking-tighter flex  md:items-center'>We provide <HoverCard>
           <HoverCardTrigger className='relative'>
-            <span className='ml-4 mr-5 relative flex items-center  font-Edwardian text-[80px]'>
-              <div className="w-2 h-2  bg-black rounded-full animate-pulseCircle " />
+            <span className='ml-4 mr-5 relative flex items-center  font-Edwardian text-[58px] md:text-[80px] -mt-6 md:mt-0' >
+              <div className="w-2 h-2 hidden md:block  bg-black rounded-full animate-pulseCircle  " />
               fast-output
-
             </span>
-            <div className='tracking-tighter absolute top-8 -right-3 font-Helvetica text-sm'>
+            <div className='tracking-tighter absolute md:top-8 top-7 -right-1 md:-right-3 font-Helvetica text-[10px] md:text-sm'>
               01
 
             </div>
@@ -58,15 +56,15 @@ const values = () => {
         </HoverCard> <br />
         </div>
 
-        <div className='text-[50px] flex -mt-10  w-full ml-[400px] items-center tracking-tighter'> with
+        <div className='text-[32px] md:text-[50px] flex -mt-8 md:-mt-10  w-full md:ml-[400px] items-center tracking-tighter'> with
           <HoverCard>
             <HoverCardTrigger className='relative'>
-              <span className='ml-3 mr-5 relative flex items-center  font-Edwardian tracking-tighter text-[80px] -mt-2'>
-                <div className="w-2 h-2  bg-black rounded-full animate-pulseCircle" />
+              <span className='ml-3 mr-5 relative flex items-center  font-Edwardian tracking-tighter text-[58px] md:text-[80px] -mt-2'>
+                <div className="hidden md:block w-2 h-2  bg-black rounded-full animate-pulseCircle" />
                 all-in-one
 
               </span>
-              <div className='tracking-tighter absolute top-7 -right-[200px] font-Helvetica text-sm'>
+              <div className='tracking-tighter absolute bottom-3 md:top-7 right-1 md:-right-[200px] font-Helvetica text-[10px] md:text-sm'>
                 02
               </div>
             </HoverCardTrigger>
@@ -93,13 +91,13 @@ const values = () => {
           </HoverCard> solutions</div>
 
 
-        <div className='text-[50px] tracking-tighter -mt-10 flex items-center ml-[200px]'>that are
+        <div className='text-[32px] md:text-[50px] tracking-tighter -mt-8 md:-mt-10 flex items-center md:ml-[200px]'>that are
           <HoverCard>
             <HoverCardTrigger>
-              <span className='ml-4 mr-6 relative font-Edwardian tracking-tight text-[80px] flex items-center'>
-                <div className="w-2 h-2  bg-black rounded-full animate-pulseCircle" />
+              <span className='ml-2 md:ml-4 -mt-2 md:mt-0 md:mr-6 relative font-Edwardian tracking-tight text-[58px] md:text-[80px] flex items-center'>
+                <div className="hidden md:block w-2 h-2  bg-black rounded-full animate-pulseCircle" />
                 budget-friendly
-                <div className='tracking-tighter absolute top-6 -right-[120px] font-Helvetica text-sm'>
+                <div className='tracking-tighter absolute bottom-4 -right-4 md:-right-[20px] font-Helvetica text-[10px] md:text-sm'>
                   03
                 </div>
                 <div className="absolute bottom-7 left-0 h-[2px] w-full overflow-hidden">
@@ -128,17 +126,17 @@ const values = () => {
 
 
             </HoverCardContent>
-          </HoverCard> and   </div>
+          </HoverCard>    </div>
 
 
-        <div className='-mt-8 flex items-center justify-center gap-4'>
-          <h3 className='text-[50px] tracking-tighter ml-[100px] '>backed by clear  </h3>
+        <div className='-mt-4 md:-mt-8 md:flex items-center justify-center gap-4'>
+          <h3 className='text-[32px] md:text-[50px] tracking-tighter md:ml-[100px] '>and backed by clear  </h3>
           <HoverCard>
             <HoverCardTrigger>
-              <span className=' relative flex items-center font-Edwardian tracking-tight text-[80px]'>
-                <div className="w-2 h-2  bg-black rounded-full animate-pulseCircle" />
+              <span className='w-fit relative flex items-center font-Edwardian tracking-tight  text-[58px] md:text-[80px] -mt-6 md:mt-0'>
+                <div className="w-2 h-2 hidden md:block bg-black rounded-full animate-pulseCircle" />
                 communication
-                <div className='tracking-tighter absolute top-9 -right-5 font-Helvetica text-sm'>
+                <div className='tracking-tighter absolute bottom-4 -right-5 md:-right-5 font-Helvetica text-[10px] md:text-sm'>
                   04
                 </div>
               </span>
@@ -167,9 +165,7 @@ const values = () => {
 
         </div>
 
-        <h3 className='text-[50px] -mt-6 tracking-tighter mr-52 text-end'>every step of the way.</h3>
-
-
+        <h3 className='text-[32px] md:text-[50px] -mt-6 tracking-tighter md:mr-52 md:text-end'>every step of the way.</h3>
       </div>
 
 

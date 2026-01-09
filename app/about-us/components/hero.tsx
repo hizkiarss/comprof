@@ -4,6 +4,7 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 import Buttons from "@/components/buttons";
 import Magnet from "@/app/components/animation/magnet"
 import Image from "next/image";
+import HeroCarouselMobile from "./heroCarouselMobile";
 
 
 
@@ -40,10 +41,10 @@ const HoverVideo: React.FC<HoverVideoProps> = ({ src, title, idx, hoveredIndex, 
             className={`
         transition-all duration-500 ease-out relative flex-shrink-0
         ${hoveredIndex === null ? "w-[220px]" :
-                    hoveredIndex === idx
-                        ? "w-[400px]"
-                        : "w-[175px]"
-                }
+                hoveredIndex === idx
+                    ? "w-[400px]"
+                    : "w-[175px]"
+            }
       `}
             style={{
                 transformOrigin: 'bottom left',
@@ -73,11 +74,11 @@ const HoverVideo: React.FC<HoverVideoProps> = ({ src, title, idx, hoveredIndex, 
                 playsInline
                 className={`
           transition-all duration-500 ease-out relative flex-shrink-0 object-cover mt-2
-          ${hoveredIndex === null ? "w-full h-[250px] mon:h-[400px]" :
-                        hoveredIndex === idx
-                            ? "h-[400px] mon:h-[450px]"
-                            : "h-[200px]"
-                    }
+          ${hoveredIndex === null ? "w-full h-[200px] mon:h-[400px]" :
+                    hoveredIndex === idx
+                        ? "h-[400px] mon:h-[450px]"
+                        : "h-[200px]"
+                }
         `}
             />
         </div>
@@ -96,19 +97,36 @@ const Hero = () => {
     ];
 
     return (
-        <div className='h-screen pt-10 relative bg-white'>
-            <div className='h-full w-[1140px] flex flex-col relative'>
+        <div className='md:pt-10 relative bg-white '>
+            <div className=' md:w-[1140px]  flex flex-col md:justify-normal relative min-h-screen'>
                 <FadeInAnimation delay={2.5}>
-                    <div className='flex justify-center gap-12  z-0'>
+                    <div className='md:flex justify-center gap-12  z-0'>
 
-                        <Magnet>
+                        <div className="hidden md:block">
+                            <Magnet>
+                                <div className="group relative">
+                                    <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                    <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
+                                </div>
+                            </Magnet>
+                        </div>
+
+
+                        <div className="flex md:hidden justify-center">
                             <div className="group relative">
-                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
-                                <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
+                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-24 md:w-44 md:mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 hidden lg:block absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>
-                        </Magnet>
-                        <div className={`z-0 transition-all duration-300 w-[500px]`}>
-                            <h1 className={`relative text-center tracking-tight leading-[0.9] text-[20px] md:text-[50px] -mt-5 transition-all duration-400  ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
+
+                            <div className="group relative">
+                                <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-24 md:w-44 md:mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/richard.png" width={100} height={100} alt="" className="w-24 hidden lg:block absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
+                            </div>
+                        </div>
+
+
+                        <div className={`z-0 transition-all duration-300 w-full mt-5 md:mt-10 md:w-[500px]`}>
+                            <h1 className={`relative text-center tracking-tight leading-[1.0] md:leading-[0.9] text-[34px] md:text-[50px] -mt-5 transition-all duration-400  ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
                                 It&apos;s just
                                 <span className={`font-Edwardian tracking-wide font-medium text-[60px] md:text-[90px] mx-3 relative inline-block transition-all duration-400 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
                                     two
@@ -126,24 +144,31 @@ const Hero = () => {
                                 </div>
                             </h1>
 
-                            <div className={`flex flex-col justify-center items-center gap-4`}>
-                                <p className={`text-center transition-all duration-400 mt-3 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
-                                    We design and build websites that actually work, craft visuals that turn heads, and manage social media so you don&apos;t have to.
-                                    <br /> <span className="font-semibold font-Aeonik">No big agency fluff, just two humans who get stuff done.</span>
+                            <div className={`px-2 md:px-0 flex flex-col justify-center items-center gap-4`}>
+                                <p className={`text-center text-sm md:text-base transition-all duration-400 mt-0 md:mt-3 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`}>
+                                    <span className="hidden md:block">We design and build websites that actually work, craft visuals that turn heads, and manage social media so you don&apos;t have to.
+                                    </span>
+
+                                    <br /> <span className="md:font-semibold font-Aeonik">No big agency fluff, just two humans who get stuff done.</span>
                                 </p>
-                                <Buttons className={`${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} content='Contact us' />
+                                <Buttons className={`hidden md:flex ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} content='Contact us' />
                             </div>
                         </div>
-                        <Magnet >
-                            <div className="group relative">
-                                <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
-                                <Image src="/photos/richard.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
-                            </div>                        </Magnet>
+                        <div className="hidden md:block">
+                            <Magnet >
+                                <div className="group relative">
+                                    <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                    <Image src="/photos/richard.png" width={100} height={100} alt="" className="w-24 absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
+                                </div>
+                            </Magnet>
+                        </div>
 
                     </div>
                 </FadeInAnimation>
 
-                <div className="absolute bottom-0 left-0 right-0 flex justify-between items-end z-30">
+
+
+                <div className="hidden absolute bottom-20 left-0 right-0 md:flex justify-between items-end z-30">
                     {videos.map((video, idx) => (
                         <HoverVideo
                             key={idx}
@@ -156,6 +181,9 @@ const Hero = () => {
                         />
                     ))}
                 </div>
+
+                <HeroCarouselMobile/>
+                
             </div>
         </div>
     );

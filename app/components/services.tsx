@@ -40,14 +40,12 @@ const HorizontalCarousel = () => {
                         if (Math.abs(panelCenter - viewportCenter) < bounds.width / 2) {
                             gsap.to(panel, {
                                 y: 0,
-                                // boxShadow: "0 30px 60px rgba(0,0,0,0.1)",
                                 backgroundColor: "#F0F0F0",
                                 color: "#00000",
                                 duration: 0.3,
                                 ease: "power2.out",
                             });
                         } else {
-                            // Panel is inactive
                             gsap.to(panel, {
                                 y: 0,
                                 boxShadow: "none",
@@ -258,8 +256,6 @@ const HorizontalCarousel = () => {
                             </div>
                         </div>
                     </div>
-
-                   
 
 
 

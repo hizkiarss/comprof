@@ -116,7 +116,7 @@ const Cta = () => {
                     </Link>
 
                     <Link
-                        className="border-t-2 w-full items-center px-3 py-3 hover:bg-opacity-30 md:hover:rounded-xl hover:rounded-t-xl transition-all duration-300 ease-out"
+                        className="border-t-2 w-full items-center px-3 py-3 pb-5 hover:bg-opacity-30 md:hover:rounded-xl hover:rounded-t-xl transition-all duration-300 ease-out"
                         href="https://www.linkedin.com/in/hizkiasihombing/"
                         target="_blank"
                         rel="noopener noreferrer"

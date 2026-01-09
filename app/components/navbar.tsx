@@ -8,7 +8,7 @@ import DenpasarClock from '@/utils/denpasarClock';
 
 const Navbar = () => {
     return (
-        <nav className="mt-0 hidden md:flex md:py-10 text-xs md:text-base h-screen  flex-col justify-between sticky top-0 !w-[80px] z-10 bg-white ">
+        <nav className="mt-0 hidden md:flex md:py-10 text-xs md:text-base h-screen  flex-col justify-between !sticky top-0 !w-[80px] z-10 bg-white ">
             <div>
                 <Image src="/logo/logo.svg" alt="logo" width={0} height={0} className="w-20" />
 
