@@ -11,11 +11,12 @@ import ValuesDescriptionMobile from "@/app/about-us/components/valuesDescription
 
 const Page = () => {
     return (
-        <div className="  md:flex justify-center relative  ">
-            <div className="md:flex gap-10 max-w-[1280px] ">
+        <div className="flex justify-center ">
+            <div className="block xl:flex gap-10  xl:max-w-[1280px] relative">
                 <Navbar />
                 <NavbarMobile />
-                <div className="overflow-hidden max-w-[1140px] ">
+                <div className={"xl:hidden h-[150px] w-screen z-20 bg-white absolute top-0"}></div>
+                <div className=" xl:max-w-[1140px] overflow-hidden ">
                     <div className="relative z-20">
                         <CursorFollower />
                         <Hero />
@@ -23,17 +24,19 @@ const Page = () => {
                         <ValuesDescriptionMobile/>
                     </div>
 
-                    <div className="relative h-screen bg-transparent pt-10">
+                   <div>
+                       <div className="relative h-screen bg-transparent pt-10">
 
-                    </div>
+                       </div>
 
-                    <video
-                        src="/video/sosmed1.mp4"
-                        className="fixed top-32 md:top-0 h-screen  object-cover  md:w-[1140px]  "
-                        autoPlay
-                        loop
-                        muted
-                    />
+                       <video
+                           src="/video/sosmed1.mp4"
+                           className="fixed top-32 md:top-0 h-screen  object-cover  md:w-[1140px]  "
+                           autoPlay
+                           loop
+                           muted
+                       />
+                   </div>
 
                     <div className="relative z-20 bg-white">
                         <FAQ />

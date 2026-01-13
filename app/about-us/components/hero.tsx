@@ -97,12 +97,11 @@ const Hero = () => {
     ];
 
     return (
-        <div className='md:pt-10 relative bg-white '>
-            <div className=' md:w-[1140px]  flex flex-col md:justify-normal relative min-h-screen'>
+        <div className=' xl:pt-10 relative bg-white '>
+            <div className='-mt-[110px] xl:mt-0 xl:w-[1140px]  items-center  flex flex-col justify-between md:items-center xl:justify-normal relative min-h-screen'>
                 <FadeInAnimation delay={2.5}>
-                    <div className='md:flex justify-center gap-12  z-0'>
-
-                        <div className="hidden md:block">
+                    <div className='mt-[110px] xl:mt-0 flex flex-col xl:flex-row justify-center items-center gap-0 xl:gap-12 w-fit  z-0'>
+                        <div className="hidden xl:block">
                             <Magnet>
                                 <div className="group relative">
                                     <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
@@ -112,14 +111,14 @@ const Hero = () => {
                         </div>
 
 
-                        <div className="flex md:hidden justify-center">
+                        <div className="flex xl:hidden justify-center w-fit ">
                             <div className="group relative">
-                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-24 md:w-44 md:mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/Galih.png" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-24 md:w-32 xl:w-44 md:mt-0 xl:mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
                                 <Image src="/photos/gus.png" width={100} height={100} alt="" className="w-24 hidden lg:block absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>
 
                             <div className="group relative">
-                                <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-24 md:w-44 md:mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
+                                <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-24 md:w-32 xl:w-44 md:mt-0 xl:mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
                                 <Image src="/photos/richard.png" width={100} height={100} alt="" className="w-24 hidden lg:block absolute bottom-0 left-10 transition-all duration-500 opacity-0  z-0 group-hover:-bottom-10 group-hover:opacity-100 " />
                             </div>
                         </div>
@@ -154,7 +153,7 @@ const Hero = () => {
                                 <Buttons className={`hidden md:flex ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} content='Contact us' />
                             </div>
                         </div>
-                        <div className="hidden md:block">
+                        <div className="hidden xl:block">
                             <Magnet >
                                 <div className="group relative">
                                     <Image src="/photos/Kia.webp" width={100} height={100} alt="" className={`relative z-20 border-black rounded-full w-44 mt-10 ${hoveredIndex != null ? "filter blur-sm" : "opacity-100"}`} />
@@ -166,9 +165,7 @@ const Hero = () => {
                     </div>
                 </FadeInAnimation>
 
-
-
-                <div className="hidden absolute bottom-20 left-0 right-0 md:flex justify-between items-end z-30">
+                <div className="hidden absolute bottom-20 left-0 right-0 xl:flex justify-between items-end z-30">
                     {videos.map((video, idx) => (
                         <HoverVideo
                             key={idx}

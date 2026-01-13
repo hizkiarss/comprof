@@ -12,14 +12,13 @@ const WhyHire = () => {
 
                 <div
                     className="bg-[url('/photos/hirebackground.svg')] bg-contain bg-no-repeat bg-center text-5xl md:text-8xl md:h-3/5 w-full h-full relative ">
-                    <BlurText text='see' style='bg-opacity-70 tracking-tight font-bold rounded-full mt-5 absolute top-0 md:top-20 left-6 md:left-48' />
-                    <BlurText text='all' style='bg-opacity-70 tracking-tight font-bold rounded-full absolute top-16 md:top-[180px] left-12 md:left-[255px]' />
-                    <BlurText text='the' style='bg-opacity-70 tracking-tight font-bold rounded-full -mt-10 absolute bottom-10 md:bottom-40 right-14 md:right-60' />
-                    <BlurText text='benefits' style='bg-opacity tracking-tight-70 font-bold rounded-full absolute bottom-0 md:bottom-20 right-[20px]' />
+                    <BlurText text='see' style='bg-opacity-70 tracking-tight font-bold rounded-full mt-5 absolute top-0 xl:top-20 left-6 md:left-24 xl:left-48' />
+                    <BlurText text='all' style='bg-opacity-70 tracking-tight font-bold rounded-full absolute top-16 md:top-[120px] xl:top-[180px] left-12 md:left-[80px] xl:left-[255px]' />
+                    <BlurText text='the' style='bg-opacity-70 tracking-tight font-bold rounded-full -mt-10 absolute bottom-10 md:-bottom-6 xl:bottom-40 right-14 md:right-60' />
+                    <BlurText text='benefits' style='bg-opacity tracking-tight-70 font-bold rounded-full absolute bottom-0 md:-bottom-24 xl:bottom-20 right-[20px]' />
                 </div>
 
 
-                {/* desktop */}
                 <div
                     className={"hidden md:block absolute top-8 left-0 md:top-24 border border-white rounded-xl px-3 w-fit max-w-40 md:max-w-sm  bg-white text-black"}>
                     <FadeInAnimation>
@@ -38,7 +37,7 @@ const WhyHire = () => {
                 </div>
 
                 <div
-                    className={"hidden md:block absolute  bottom-10 left-2 md:left-20  border border-white rounded-xl px-3  max-w-32 md:max-w-sm bg-white mr:0 md:-mr-[300px] text-black"}>
+                    className={"hidden md:block absolute  bottom-10 left-2 md:left-2 xl:left-20  border border-white rounded-xl px-3  max-w-32 md:max-w-sm  mr:0 md:-mr-[300px] text-black"}>
                     <FadeInAnimation>
                         <div>
                             <div className={"flex gap-2 items-center md:px-4 py-2"}>
@@ -57,7 +56,7 @@ const WhyHire = () => {
                 </div>
 
                 <div
-                    className={"hidden md:block absolute max-w-40 top-12 md:top-40 right-6 md:right-0  border border-white rounded-xl px-3 w-fit md:max-w-sm  bg-white text-black"}>
+                    className={"hidden md:block absolute max-w-40 top-12 md:top-40 xl:top-40 right-6 md:right-0  rounded-xl px-3 w-fit md:max-w-sm   text-black"}>
                     <FadeInAnimation>
                         <div>
                             <div className={"flex gap-2 items-center md:px-4 py-2"}>
@@ -77,7 +76,7 @@ const WhyHire = () => {
                 </div>
 
                 <div
-                    className={" hidden md:block absolute max-w-40 bottom-0 md:bottom-20 right-8 md:right-0  border border-white rounded-xl px-3 w-fit  md:max-w-sm  bg-white text-black"}>
+                    className={" hidden md:block absolute max-w-40 bottom-0 md:-bottom-8 xl:bottom-20 right-8 md:right-0  border border-white rounded-xl px-3 w-fit  md:max-w-sm  bg-white text-black"}>
                     <FadeInAnimation>
 
                         <div>
@@ -102,7 +101,6 @@ const WhyHire = () => {
             </div>
 
 
-            {/* mobile */}
             <div className='block md:hidden mt-10 '>
                 <div
                     className={"block md:hidden border border-white rounded-xl px-3 w-fit  bg-white text-black"}>

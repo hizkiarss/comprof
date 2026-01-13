@@ -1209,7 +1209,7 @@ export default function ImageTrail({
     return (
         <div
             ref={containerRef}
-            className={`w-full h-full absolute ${zClass} bg-transparent overflow-visible`}
+            className={`w-full h-full hidden lg:block absolute ${zClass} bg-transparent overflow-visible`}
         >
             {items.map((url, i) => (
                 <div

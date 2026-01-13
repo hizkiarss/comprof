@@ -15,7 +15,7 @@ const NavbarMobile = () => {
 
     return (
         <div className='
-  md:hidden 
+  xl:hidden
   mb-2
   flex justify-between items-center 
   w-screen pl-0 px-2 pt-6   

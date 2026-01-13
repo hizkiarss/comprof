@@ -9,10 +9,10 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 
 const Hero = () => {
     return (
-        <div className="-mt-[200px] md:mb-0 md:mt-10 h-screen flex flex-col justify-between mx-4   ">
-            <div className={"mt-[200px] md:mt-0 md:grid grid-cols-3 gap-2 md:gap-3 flex justify-center   "}>
-                <div className="bg-black rounded-xl border-[#D9DBF1] h-[300px] w-full z-20 relative overflow-x-hidden ">
-                    <MetaBalls  
+        <div className="-mt-[160px]  md:mb-0 md:mt-10 h-screen md:h-[80vh] xl:h-screen flex flex-col justify-between  mx-4   ">
+            <div className={"mt-[160px] md:mt-0 md:grid grid-cols-3 gap-2 md:gap-3 flex justify-center   "}>
+                <div className="bg-black rounded-xl border-[#D9DBF1] h-[40vh] xl:h-[300px] md:h-[400px] w-full z-20 relative overflow-x-hidden ">
+                    <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
                         cursorBallSize={2}
@@ -26,7 +26,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="hidden md:block bg-black rounded-xl border-[#D9DBF1] h-[380px] relative overflow-hidden">
+                <div className="hidden md:block bg-black rounded-xl border-[#D9DBF1] h-[380px] xl:h-[380px] md:h-[480px] relative overflow-hidden">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -41,7 +41,7 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="hidden md:block bg-black rounded-xl border-0 h-[460px] relative overflow-hidden">
+                <div className="hidden md:block bg-black rounded-xl border-0 h-[460px] xl:h-[460px] md:h-[560px] relative overflow-hidden">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -59,8 +59,8 @@ const Hero = () => {
 
 
             </div>
-            <FadeInAnimation scroll={false} delay={2.5} >
-                <div className={"lg:grid grid-cols-6 mt-4 md:-mt-20"}>
+            <FadeInAnimation scroll={false} delay={0.7} >
+                <div className={"items-end lg:items-start lg:grid grid-cols-6 mt-4 xl:-mt-6"}>
                     <div className={"col-span-4"}>
                         <p className={"text-[14px] md:text-lg font-Helvetica tracking-tighter mt-4 md:-mt-24  mb-5"}>HIZKIA SIHOMBING</p>
                         <div className="-mt-4 md:-mt-14 flex gap-8 ">
@@ -76,11 +76,11 @@ const Hero = () => {
                     </div>
 
                     <div
-                        className={"col-span-2 text-xs md:text-[15px] flex flex-col md:pt-8 gap-8 font-Helvetica md:leading-6"}>
+                        className={"col-span-2 mt-0 lg:mt-10 text-xs md:text-[15px] flex flex-col md:flex-row md:gap-14 lg:gap-3 md:items-center lg:items-start lg:flex-col  gap-4 font-Helvetica md:leading-6"}>
                         <p>I&apos;m Hizkia Sihombing, a full-stack software engineer specializing in building dynamic
                             web applications. Passionate about creating seamless user experiences across both front-end and
                             back-end development.</p>
-                        <Buttons className={"-mt-4 md:mt-0"} content={"Let's discuss"} onClick={() => goToDiv("contact")} />
+                        <Buttons className={"  md:mt-4 w-fit"} content={"Let's discuss"} onClick={() => goToDiv("contact")} />
                     </div>
                 </div>
             </FadeInAnimation>

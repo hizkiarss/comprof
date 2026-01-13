@@ -9,23 +9,24 @@ import Hero2 from './components/aboutUs'
 import ImageCarousel from '@/app/components/imageCarousel'
 import Trigger from './components/trigger';
 import NavbarMobile from "./components/navbarMobile"
-
+import ServicesMobile from "./components/serviceMobile";
 
 const Page = () => {
     return (
         <div className="flex justify-center ">
-            <div className="block md:flex gap-10  max-w-[1280px] ">
-                <Navbar />
-                <NavbarMobile/>
-                <div className="overflow-hidden max-w-[1140px]">
+            <div className="block xl:flex gap-10  max-w-[1280px] ">
+                <><Navbar/>
+                    <NavbarMobile/></>
+                <div className=" max-w-[1140px]">
                     <CursorFollower />
                     <Hero />
-                    <div className='mt-52 md:mt-32'>
+                    <div className='mt-16 md:mt-32'>
                         <Hero2 />
                         <ImageCarousel />
                     </div>
                     <WhyHire />
                     <Services />
+                    <ServicesMobile/>
                     <Trigger />
 
                     <div className='mt-40'>

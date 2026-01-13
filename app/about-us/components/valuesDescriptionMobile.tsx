@@ -7,9 +7,9 @@ import Buttons from "@/components/buttons";
 
 const ValuesDescriptionMobile = () => {
     return (
-        <div className='flex md:hidden flex-col justify-end items-end bg-white px-2 pb-10'>
-            <div className={"relative w-[220px] pr-4 mt-20 "}>
-                <div className={"absolute -left-[150px] -top-20"}>
+        <div className='flex md:grid grid-cols-2 md:gap-x-4 md:gap-y-20 xl:hidden flex-col justify-end items-end bg-white px-2 pb-10'>
+            <div className={"relative w-[220px] md:w-full pr-4 mt-20 "}>
+                <div className={"absolute -left-[150px] md:-left-8 -top-20 md:-top-40"}>
                     <Lottie1/>
                 </div>
                 <div className=' '>
@@ -30,8 +30,8 @@ const ValuesDescriptionMobile = () => {
 
             </div>
 
-            <div className={"relative w-[220px] pr-4 mt-20 "}>
-                <div className={"absolute -left-[200px] -top-16"}>
+            <div className={"relative w-[220px] md:w-full pr-4 mt-20 "}>
+                <div className={"absolute -left-[200px] md:-left-20 -top-16 md:-top-32"}>
                     <Lottie2/>
                 </div>
                 <div className=' '>
@@ -47,8 +47,8 @@ const ValuesDescriptionMobile = () => {
                 </div>
             </div>
 
-            <div className={"relative w-[220px] pr-4 mt-20 "}>
-                <div className={"absolute -left-[240px] -top-40 "}>
+            <div className={"relative w-[220px] md:w-full pr-4 mt-20 "}>
+                <div className={"absolute -left-[240px] md:-left-32 -top-40 md:-top-56 "}>
                     <Lottie3/>
                 </div>
                 <div className=' '>
@@ -65,13 +65,13 @@ const ValuesDescriptionMobile = () => {
                 <Buttons className="!px-4 !py-2 text-sm mt-4" content='Explore more' />
             </div>
 
-            <div className={"relative w-[220px] pr-4 mt-20 "}>
-                <div className={"absolute -left-[160px] -top-20 "}>
+            <div className={"relative w-[220px] md:w-full pr-4 mt-20 "}>
+                <div className={"absolute -left-[160px] md:-left-10 -top-20 md:-top-36 "}>
                     <Lottie4/>
                 </div>
                 <div className=' '>
                     <div className={"h-[1px] mb-4 bg-black bg-opacity-30"}></div>
-                    <p className='leading-[30px] text-[25px] tracking-tighter'>clear communication, <br/>
+                    <p className='leading-[30px] text-[25px] tracking-tighter'>clear communication, <br className={"md:hidden xl:block"}/>
                         <span className='font-Edwardian tracking-wide text-[40px]  mr-3'>always</span>
 
                     </p>

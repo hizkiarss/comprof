@@ -24,7 +24,7 @@ const Cta = () => {
                     }
                 });
             },
-            { threshold: 0.5 } // Trigger when 30% of the parent is visible
+            { threshold: 0.5 }
         );
 
         if (parentRef.current) {
@@ -44,16 +44,16 @@ const Cta = () => {
             className="font-Aeonik overflow-hidden"
             id="contact"
         >
-            <div className='relative flex flex-col justify-between items-center group h-[600px]'>
+            <div className='relative flex flex-col justify-between items-center group h-[600px] md:h-[500px] lg:h-[600px] overflow-hidden'>
                 <p className='text-[20px] z-20'>Big ideas need bold support.</p>
                 
-                <p className={`text-[50px] rotate-3 md:rotate-0 transition-all duration-1000 tracking-tighter w-fit absolute top-16 md:top-48 px-4 left-16 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] rotate-3 md:rotate-0 transition-all duration-1000 tracking-tighter w-fit absolute top-16 md:top-48 px-4 lg:left-16 md:left-4 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     call
                 </p>
 
                 <div
-                    className={`w-[450px] md:w-[1140px] bg-white absolute  transform  z-10 flex justify-center transition-all duration-1000 
-                    ${isVisible ? "bottom-72 md:bottom-40" : "-bottom-32"}`}
+                    className={`w-[450px] md:w-[700px] lg:w-[800px] xl:w-[1140px] overflow-x-hidden bg-white absolute  transform  z-10 flex justify-center transition-all duration-1000 
+                    ${isVisible ? "bottom-72 md:bottom-32 lg:bottom-44 xl:bottom-40" : "-bottom-32"}`}
                 >
                     <Image
                         width={600}
@@ -64,12 +64,12 @@ const Cta = () => {
                     />
                 </div>
 
-                <p className={`text-[50px] -rotate-6 md:rotate-0 transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] -rotate-6 md:rotate-0 transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 md:right-3 lg:right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     now.
                 </p>
 
                 <div
-                    className={`flex md:flex-row flex-col justify-between gap-2 md:gap-10 w-full md:my-10 transition-all duration-1000 
+                    className={`flex md:flex-row flex-col justify-between gap-2 md:gap-6 lg:gap-10 w-full md:mt-0 md:mb-10 lg:mt-10 lg:mb-10 transition-all duration-1000 
                     ${isVisible ? "opacity-100" : "opacity-0"}`}
                 >
                     {/* Links */}
@@ -82,7 +82,7 @@ const Cta = () => {
                         <button className="flex justify-between w-full">
                             <div className="text-start">
                                 <p className="font-bold text-lg md:text-xl">Github</p>
-                                <p className="text-xs md:text-base">github.com/hizkiarss</p>
+                                <p className="text-xs lg:text-base">github.com/hizkiarss</p>
                             </div>
                             <Image
                                 width={100}
@@ -103,7 +103,7 @@ const Cta = () => {
                         <button className="flex justify-between w-full items-center">
                             <div className="text-start">
                                 <p className="font-bold text-lg md:text-xl">Gmail</p>
-                                <p className="text-xs md:text-base">hizkiarssihombing@gmail.com</p>
+                                <p className="text-xs lg:text-base">hizkiarssihombing@gmail.com</p>
                             </div>
                             <Image
                                 src="/logo/gmailwhite.png"
@@ -124,7 +124,7 @@ const Cta = () => {
                         <button className="flex justify-between w-full items-center">
                             <div className="text-start">
                                 <p className="font-bold text-lg md:text-xl">Linkedin</p>
-                                <p className="text-xs md:text-base">linkedin.com/in/hizkiasihombing/</p>
+                                <p className="text-xs lg:text-base">linkedin.com/in/hizkiasihombing/</p>
                             </div>
                             <Image
                                 src="/logo/linkedinwhite.png"

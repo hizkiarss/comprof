@@ -13,11 +13,11 @@ import FAQ from "@/app/about-us/components/faq";
 const page = () => {
     return (
 
-        <div className="  md:flex justify-center relative  ">
-            <div className="md:flex gap-10 max-w-[1280px] ">
+        <div className="flex justify-center ">
+            <div className="block xl:flex gap-10  xl:max-w-[1280px]  ">
                 <Navbar />
                 <NavbarMobile />
-                <div className="overflow-hidden max-w-[1140px] ">
+                <div className=" max-w-[1140px] ">
                     <Hero />
                     <Title/>
                     <Website />

@@ -59,12 +59,11 @@ const HeroCarouselMobile = () => {
             opts={{
                 align: "center",
             }}
-            className="w-full mt-14 block md:hidden"
+            className="w-full mt-14 block xl:hidden"
             setApi={(api) => {
                 carouselApi.current = api
                 if (api) {
                     api.on('select', () => handleSlideChange(api))
-                    // Set initial slide
                     setCurrentSlide(api.selectedScrollSnap())
                 }
             }}
@@ -72,7 +71,7 @@ const HeroCarouselMobile = () => {
         >
             <CarouselContent className="-ml-1 ">
                 {videos.map((video, idx) => (
-                    <CarouselItem key={idx} className="pl-1 basis-2/3 h-[300px]">
+                    <CarouselItem key={idx} className="pl-1 basis-2/3 h-[50vh]">
                         <video
                             ref={(el) => {
                                 videoRefs.current[idx] = el;

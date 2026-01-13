@@ -113,11 +113,11 @@ const config: Config = {
 					},
 				},
 				roll: {
-					"0%,20%": { transform: "translateY(0%)" },
-					"25%,45%": { transform: "translateY(-100%)" },
-					"50%,70%": { transform: "translateY(-200%)" },
-					"75%,95%": { transform: "translateY(-300%)"  },
-					"100%": { transform: "translateY(0%)" },
+					"0%,20%": { transform: "translateY(143%)" },
+					"25%,45%": { transform: "translateY(43%)" },
+					"50%,70%": { transform: "translateY(-57%)" },
+					"75%,95%": { transform: "translateY(-157%)"  },
+					"100%": { transform: "translateY(143%)" },
 				},
 
 			},

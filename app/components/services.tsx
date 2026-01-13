@@ -18,8 +18,7 @@ const HorizontalCarousel = () => {
         const container = containerRef.current;
         const slider = sliderRef.current;
         const panels = gsap.utils.toArray<HTMLElement>(".panel");
-        const isDesktop = window.innerWidth >= 768;
-
+        const isDesktop = window.innerWidth >= 1280;
         if (!container || !slider || panels.length === 0) return;
         if (!isDesktop) return;
         gsap.to(panels, {
@@ -66,7 +65,7 @@ const HorizontalCarousel = () => {
 
 
     return (
-        <div className="relative mt-10 ">
+        <div className="relative hidden xl:block mt-10 ">
 
             <div
                 ref={containerRef}
@@ -80,10 +79,11 @@ const HorizontalCarousel = () => {
 
                 <div
                     ref={sliderRef}
-                    className="flex flex-col  md:flex-row w-max justify-start md:items-center gap-0 md:gap-10 mt-6 md:mt-0"
+                    className="flex flex-col  xl:flex-row w-max justify-start md:items-center gap-0 md:gap-10 mt-6 md:mt-0"
                 >
 
-                    <div className="panel w-screen md:w-[1000px]  mx-0 md:mx-2 px-2 md:px-6 py-6 rounded-xl">
+
+                    <div className="panel w-screen lg:w-[1000px]  mx-0 md:mx-2 px-2 md:px-6 py-6 rounded-xl">
                         <div className="text-4xl bg-[#F0F0F0] p-4 rounded-xl">
                             <div className="flex gap-4 h-[200px] md:h-[408px]">
                                 <div className="overflow-hidden rounded-xl md:h-fit h-[200px] relative   group">

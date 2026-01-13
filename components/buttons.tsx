@@ -14,7 +14,7 @@ interface Props {
 const Buttons: React.FC<Props> = ({content, className, noArrow, onClick, arrowSmall, arrowMobile}) => {
     const defaultStyle = `
     flex gap-1 md:gap-2 border-2 rounded-3xl py-1 md:py-2 px-4 md:px-6 transition-colors duration-300 ease-out border-2
- w-fit hover:text-black hover:bg-white  hover:border-black h-fit items-center tracking-tight
+ w-fit hover:text-black hover:bg-white  hover:border-black h-fit items-center tracking-tight whitespace-nowrap
   `;
     const style = className ? `${defaultStyle} ${className}` : defaultStyle;
     return (
