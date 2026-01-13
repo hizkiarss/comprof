@@ -156,7 +156,7 @@ export default function Trigger() {
 
     const handleClick = () => {
         if (window.innerWidth >= 1025) {
-            router.push(`/service`);
+            router.push(`/works`);
         }
     };
 
@@ -232,7 +232,7 @@ export default function Trigger() {
                             {hoveredTrigger.desc}
                         </p>
 
-                        <Link href="/service" className="flex xl:hidden justify-end mt-3 ">
+                        <Link href="/works" className="flex xl:hidden justify-end mt-3 ">
                             <Buttons
                                 content="Let's discuss"
                                 className="text-xs md:text-sm mt-1 md:mt-0 mr-2"

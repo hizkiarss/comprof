@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import {ArrowUpRight} from "lucide-react";
 import FadeInAnimation from "@/app/components/fadeInAnimation";
+
 const ServiceMobile = () => {
     return (
         <div className="relative mt-10 block xl:hidden ">
@@ -23,7 +24,6 @@ const ServiceMobile = () => {
                 >
 
 
-
                     <FadeInAnimation>
                         <div className="w-screen lg:w-[1000px]  mx-0 px-2 md:px-6 py-6 rounded-xl">
                             <div className="text-4xl bg-[#F0F0F0] p-4 rounded-xl">
@@ -47,7 +47,8 @@ const ServiceMobile = () => {
 
                                     <div className="flex flex-col gap-2 h-[408px]">
                                         <div className="overflow-hidden rounded-xl relative group">
-                                            <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200}
+                                            <Image src="/photos/Social Media Creative Porto 2.png" width={400}
+                                                   height={200}
                                                    alt="slide"
                                                    className=" w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                             />
@@ -61,7 +62,8 @@ const ServiceMobile = () => {
                                         </div>
 
                                         <div className="overflow-hidden rounded-xl relative group">
-                                            <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200}
+                                            <Image src="/photos/Social Media Creative Porto 3.png" width={400}
+                                                   height={200}
                                                    alt="slide"
                                                    className="w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                             />
@@ -83,10 +85,10 @@ const ServiceMobile = () => {
                                         </h3>
                                     </div>
                                     <div>
-                                        <p className="text-sm md:text-base mt-4 md:mt-2">I help businesses grow online by
-                                            building fast, responsive, and SEO-optimized websites using modern technologies
-                                            like React, Next.js, and Laravel—designed to deliver seamless user experiences,
-                                            improve performance, and convert visitors into customers.</p>
+                                        <p className="text-sm md:text-base mt-4 md:mt-2">Fast, responsive websites are
+                                            built using modern tools and frameworks, with performance and scalability in
+                                            mind. Every site is designed to load quickly, adapt seamlessly across
+                                            devices, and grow alongside your business.</p>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +118,8 @@ const ServiceMobile = () => {
 
                                     <div className="flex flex-col gap-2 h-[408px]">
                                         <div className="overflow-hidden rounded-xl relative group">
-                                            <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200}
+                                            <Image src="/photos/Social Media Creative Porto 2.png" width={400}
+                                                   height={200}
                                                    alt="slide"
                                                    className=" w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                             />
@@ -130,7 +133,8 @@ const ServiceMobile = () => {
                                         </div>
 
                                         <div className="overflow-hidden rounded-xl relative group">
-                                            <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200}
+                                            <Image src="/photos/Social Media Creative Porto 3.png" width={400}
+                                                   height={200}
                                                    alt="slide"
                                                    className="w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                             />
@@ -147,15 +151,17 @@ const ServiceMobile = () => {
 
                                 <div className="mt-4 flex flex-col md:flex-row md:gap-20 items-start md:items-center">
                                     <div className="flex gap-2 items-center leading-[0.95]">
-                                        <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">01.</h3>
-                                        <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Website <br/> Development
+                                        <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">02.</h3>
+                                        <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Social
+                                            Media <br/> Management
                                         </h3>
                                     </div>
                                     <div>
-                                        <p className="text-sm md:text-base mt-4 md:mt-2">I help businesses grow online by
-                                            building fast, responsive, and SEO-optimized websites using modern technologies
-                                            like React, Next.js, and Laravel—designed to deliver seamless user experiences,
-                                            improve performance, and convert visitors into customers.</p>
+                                        <p className="text-sm md:text-base mt-4 md:mt-2">Your social presence is managed
+                                            with thoughtful content, on-brand visuals, and a structured schedule that
+                                            keeps everything running smoothly. The focus stays on consistency and
+                                            clarity—making sure each post connects with the right audience over
+                                            time.</p>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +191,8 @@ const ServiceMobile = () => {
 
                                     <div className="flex flex-col gap-2 h-[408px]">
                                         <div className="overflow-hidden rounded-xl relative group">
-                                            <Image src="/photos/Social Media Creative Porto 2.png" width={400} height={200}
+                                            <Image src="/photos/Social Media Creative Porto 2.png" width={400}
+                                                   height={200}
                                                    alt="slide"
                                                    className=" w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                             />
@@ -199,7 +206,8 @@ const ServiceMobile = () => {
                                         </div>
 
                                         <div className="overflow-hidden rounded-xl relative group">
-                                            <Image src="/photos/Social Media Creative Porto 3.png" width={400} height={200}
+                                            <Image src="/photos/Social Media Creative Porto 3.png" width={400}
+                                                   height={200}
                                                    alt="slide"
                                                    className="w-[400px] h-[98px] md:w-[400px] md:h-[200px] object-cover object-top rounded-xl transform transition duration-300 hover:scale-110 origin-center"
                                             />
@@ -216,15 +224,15 @@ const ServiceMobile = () => {
 
                                 <div className="mt-4 flex flex-col md:flex-row md:gap-20 items-start md:items-center">
                                     <div className="flex gap-2 items-center leading-[0.95]">
-                                        <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">01.</h3>
-                                        <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Website <br/> Development
+                                        <h3 className="tracking-tight mt-1 text-[50px] md:text-[60px]">03.</h3>
+                                        <h3 className="tracking-tight mt-1 text-[25px] md:text-[30px]">Visual <br/> Creation
                                         </h3>
                                     </div>
                                     <div>
-                                        <p className="text-sm md:text-base mt-4 md:mt-2">I help businesses grow online by
-                                            building fast, responsive, and SEO-optimized websites using modern technologies
-                                            like React, Next.js, and Laravel—designed to deliver seamless user experiences,
-                                            improve performance, and convert visitors into customers.</p>
+                                        <p className="text-sm md:text-base mt-4 md:mt-2">Engaging, visually striking
+                                            digital assets are designed to support your brand across every touchpoint.
+                                            Each visual is crafted to stay on-brand, communicate clearly, and elevate
+                                            how the brand is seen online.</p>
                                     </div>
                                 </div>
                             </div>

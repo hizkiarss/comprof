@@ -72,7 +72,7 @@ const Hero = () => {
                             <div className={"flex items-center leading-[240px] tracking-tighter  "}>
                                 every
                                 <span
-                                    className={"font-Edwardian font-medium -ml-2 md:-mb-3 text-[120px] lg:text-[215px] md:text-[185px]"}>thing</span>
+                                    className={"font-Edwardian font-medium -ml-2 md:-mb-3 text-[130px] lg:text-[215px] md:text-[185px]"}>thing</span>
                             </div>
                             <p className={"-mt-28 md:-mt-24s tracking-tighter "}>covered</p>
                         </h1>

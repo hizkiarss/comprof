@@ -17,7 +17,7 @@ const Page = () => {
             <div className="block xl:flex gap-10  max-w-[1280px] ">
                 <><Navbar/>
                     <NavbarMobile/></>
-                <div className=" max-w-[1140px]">
+                <div className=" max-w-[1140px] overflow-x-hidden">
                     <CursorFollower />
                     <Hero />
                     <div className='mt-16 md:mt-32'>

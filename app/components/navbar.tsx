@@ -10,7 +10,9 @@ const Navbar = () => {
         <nav
             className="mt-0 hidden xl:flex md:py-10 text-xs md:text-base h-screen flex-col justify-between !sticky top-0 !w-[80px] z-10 bg-white ">
             <div>
-                <Image src="/logo/logo.svg" alt="logo" width={0} height={0} className="w-20"/>
+                <a href={"/"}>
+                    <Image src="/logo/logo.svg" alt="logo" width={0} height={0} className="w-20"/>
+                </a>
 
                 <div className="mt-4 flex flex-col gap-1 items-start">
 
@@ -20,9 +22,9 @@ const Navbar = () => {
                         </button>
                     </a>
 
-                    <a href={"/service"}>
+                    <a href={"/works"}>
                         <button className="text-gray-400 hover:text-black transition-all duration-300">
-                            Services
+                            Our works
                         </button>
                     </a>
 

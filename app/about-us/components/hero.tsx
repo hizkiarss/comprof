@@ -99,7 +99,7 @@ const Hero = () => {
     return (
         <div className=' xl:pt-10 relative bg-white '>
             <div className='-mt-[110px] xl:mt-0 xl:w-[1140px]  items-center  flex flex-col justify-between md:items-center xl:justify-normal relative min-h-screen'>
-                <FadeInAnimation delay={2.5}>
+                <FadeInAnimation delay={0.8}>
                     <div className='mt-[110px] xl:mt-0 flex flex-col xl:flex-row justify-center items-center gap-0 xl:gap-12 w-fit  z-0'>
                         <div className="hidden xl:block">
                             <Magnet>
