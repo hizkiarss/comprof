@@ -4,7 +4,7 @@ import FadeInAnimation from "@/app/components/fadeInAnimation";
 
 const Hero = () => {
     return (
-        <div className='mx-2 md:mx-2 md:px-2 xl:mx-0'>
+        <div className='mx-2 md:mx-2 md:px-2 xl:mx-0 mb-0 md:mb-6 '>
             <FadeInAnimation scroll={true}>
                 <div>
                     <h1 className=" tracking-tighter  leading-tight text-[32px] md:text-[50px]">

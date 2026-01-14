@@ -13,7 +13,7 @@ const Hero = () => {
             className="-mt-[160px]  md:mb-0 md:mt-10 h-screen md:h-[80vh] xl:h-screen flex flex-col justify-between  mx-4   ">
             <div className={"mt-[160px] md:mt-0 md:grid grid-cols-3 gap-2 md:gap-3 flex justify-center   "}>
                 <div
-                    className="bg-black rounded-xl border-[#D9DBF1] h-[40vh] xl:h-[300px] md:h-[30vh] w-full z-20 relative overflow-x-hidden ">
+                    className="bg-black rounded-xl border-[#D9DBF1] h-[40vh] xl:h-[300px] mon:h-[50vh] md:h-[30vh] w-full z-20 relative overflow-x-hidden ">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -29,7 +29,7 @@ const Hero = () => {
                 </div>
 
                 <div
-                    className="hidden md:block bg-black rounded-xl border-[#D9DBF1] h-[380px] xl:h-[380px] md:h-[40vh] relative overflow-hidden">
+                    className="hidden md:block bg-black rounded-xl border-[#D9DBF1] h-[380px] xl:h-[380px] mon:h-[60vh] md:h-[40vh] relative overflow-hidden">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
@@ -45,7 +45,7 @@ const Hero = () => {
                 </div>
 
                 <div
-                    className="hidden md:block bg-black rounded-xl border-0 h-[460px] xl:h-[460px] md:h-[50vh] relative overflow-hidden">
+                    className="hidden md:block bg-black rounded-xl border-0 h-[460px] xl:h-[460px] mon:h-[70vh] md:h-[50vh] relative overflow-hidden">
                     <MetaBalls
                         color="#ffffff"
                         cursorBallColor="#ffffff"
