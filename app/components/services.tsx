@@ -20,6 +20,18 @@ const HorizontalCarousel = () => {
         const isDesktop = window.innerWidth >= 1280;
         if (!container || !slider || panels.length === 0) return;
         if (!isDesktop) return;
+
+        let startPoint = "top top";
+        if (window.innerWidth >= 2560) {
+            startPoint = "top-=80 top";
+        } else if (window.innerWidth >= 1920) {
+            startPoint = "top-=100 top";
+        } else if (window.innerWidth >= 1440) {
+            startPoint = "top-=5 top";
+        } else {
+            startPoint = "top top";
+        }
+
         gsap.to(panels, {
             xPercent: -100 * (panels.length - 1),
             ease: "none",
@@ -27,7 +39,7 @@ const HorizontalCarousel = () => {
                 trigger: container,
                 pin: true,
                 scrub: 1,
-                start: "top-=5 top",
+                start: startPoint,
                 end: () => `+=${slider.scrollWidth + 300}`,
                 onUpdate: () => {
                     panels.forEach(panel => {
