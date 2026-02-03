@@ -49,7 +49,7 @@ export default function UnlockPage() {
     return (
         <div className="min-h-screen flex items-center justify-center  font-Aeonik">
             <div className="max-w-md w-full space-y-8 p-8">
-                <Image className={"w-40 block mx-auto "} width={0} height={0} alt={""} src={"logo/logo.svg"}></Image>
+                <Image className={"w-40 block mx-auto "} width={0} height={0} alt={""} src={"logo/logo-kagi.svg"}></Image>
 
                 <div className="space-y-4">
                     <input

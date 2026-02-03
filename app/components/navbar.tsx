@@ -9,9 +9,9 @@ const Navbar = () => {
     return (
         <nav
             className="mt-0 hidden xl:flex md:py-10 text-xs md:text-base h-screen flex-col justify-between !sticky top-0 !w-[80px] z-10 bg-white ">
-            <div>
+            <div className={"flex flex-col items-center"}>
                 <a href={"/"}>
-                    <Image src="/logo/logo.svg" alt="logo" width={0} height={0} className="w-20"/>
+                    <Image src="/logo/logo-kagi.svg" alt="logo" width={0} height={0} className="w-[68px]"/>
                 </a>
 
                 <div className="mt-4 flex flex-col gap-1 items-start">

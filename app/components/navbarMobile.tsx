@@ -23,7 +23,7 @@ const NavbarMobile = () => {
   bg-gradient-to-t from-white/0 via-white/90 to-white/100 
 '>
             <a href={"/"}>
-                <Image src="/logo/logo.svg" alt="logo" width={0} height={0} className="w-20"/>
+                <Image src="/logo/logo-kagi.svg" alt="logo" width={0} height={0} className="w-20"/>
             </a>
 
             {/* Burger button is OUTSIDE Drawer */}

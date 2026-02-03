@@ -37,7 +37,7 @@ const LoadingOverlay = () => {
             <Image
                 width={0}
                 height={0}
-                src="/logo/logo.svg"
+                src="/logo/logo-kagi.svg"
                 alt="logo"
                 className="w-60"
                 priority

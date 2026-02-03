@@ -47,24 +47,24 @@ const Cta = () => {
             <div className='relative flex flex-col justify-between items-center group h-[600px] md:h-[500px] lg:h-[600px] overflow-hidden'>
                 <p className='text-[20px] z-20'>Big ideas need bold support.</p>
                 
-                <p className={`text-[50px] rotate-3 md:rotate-0 transition-all duration-1000 tracking-tighter w-fit absolute top-16 md:top-48 px-4 lg:left-16 md:left-4 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] rotate-3 md:rotate-0 transition-all duration-1000 tracking-tighter w-fit absolute top-16 md:top-48 px-4 lg:left-28 md:left-4 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     call
                 </p>
 
                 <div
                     className={`w-[450px] md:w-[700px] lg:w-[800px] xl:w-[1140px] overflow-x-hidden bg-white absolute  transform  z-10 flex justify-center transition-all duration-1000 
-                    ${isVisible ? "bottom-72 md:bottom-32 lg:bottom-44 xl:bottom-40" : "-bottom-32"}`}
+                    ${isVisible ? "bottom-80 md:bottom-32 lg:bottom-44 xl:bottom-40" : "-bottom-32"}`}
                 >
                     <Image
-                        width={600}
-                        height={500}
-                        src="/photos/logoBottom.png"
-                        className='ml-[20px] md:w-[900px] object-cover'
+                        width={250}
+                        height={250}
+                        src="/logo/logoBottomKagi.png"
+                        className=' md:w-[450px] lg:w-[650px] object-cover'
                         alt=''
                     />
                 </div>
 
-                <p className={`text-[50px] -rotate-6 md:rotate-0 transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 md:right-3 lg:right-20 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+                <p className={`text-[50px] -rotate-6 md:rotate-0 transition-all duration-1000 tracking-tighter absolute bottom-[260px] md:top-48 px-4 md:right-3 lg:right-28 z-20 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                     now.
                 </p>
 
@@ -72,7 +72,6 @@ const Cta = () => {
                     className={`flex md:flex-row flex-col justify-between gap-2 md:gap-6 lg:gap-10 w-full md:mt-0 md:mb-10 lg:mt-10 lg:mb-10 transition-all duration-1000 
                     ${isVisible ? "opacity-100" : "opacity-0"}`}
                 >
-                    {/* Links */}
                     <Link
                         className="border-t-2 w-full items-center px-3 py-3 hover:bg-opacity-30 md:hover:rounded-xl hover:rounded-t-xl transition-all duration-300 ease-out"
                         href="https://github.com/hizkiarss"

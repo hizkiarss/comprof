@@ -2,7 +2,7 @@
 
 import React, {useRef, useEffect} from 'react'
 
-const Website = () => {
+const VisualCreative = () => {
     const video1Ref = useRef<HTMLVideoElement | null>(null);
     const video1TabRef = useRef<HTMLVideoElement | null>(null);
     const video2Ref = useRef<HTMLVideoElement | null>(null);
@@ -37,14 +37,12 @@ const Website = () => {
 
     return (
         <div
-            className='flex flex-col md:flex-row justify-between mt-40 gap-10 md:gap-7 lg:gap-10 xl:gap-[87px] relative'>
+            className='flex flex-col md:flex-row justify-between mt-20 gap-10 md:gap-32 xl:gap-44 relative'>
             <div className='md:sticky md:top-36 xl:top-24 self-start px-2 h-fit mt-6'>
                 <p className='tracking-tighter text-[30px] -mt-8'>
-                    social media
-                </p>
+                    visual </p>
                 <p className="font-Edwardian tracking-tight font-medium text-[60px] md:text-[60px] relative inline-block transition-all duration-400 -mt-10">
-                    management
-                </p>
+                    creative </p>
             </div>
 
             <div className='flex flex-col gap-10 flex-1'>
@@ -52,9 +50,9 @@ const Website = () => {
                     <div className='flex flex-col justify-start xl:justify-between px-2 w-full xl:w-3/5'>
                         <h3 className='flex-1 tracking-tighter leading-7 text-3xl text-gray-500'>
                             <span
-                                className='tracking-tighter text-3xl text-black'>Marketing Agency:</span>
+                                className='tracking-tighter text-3xl text-black'>Multiple Brands:</span>
                             <br/>
-                            Social media Management </h3>
+                            Visual Creative </h3>
 
                         <div className=' mt-4 hidden md:block xl:hidden overflow-hidden w-full xl:h-[500px]'>
                             <video
@@ -64,13 +62,13 @@ const Website = () => {
                                 loop
                                 muted
                                 playsInline
-                                src="/video/works-socmed1.webm"
+                                src="/video/works_visual1.webm"
                             />
                         </div>
                         <p className='text-sm tracking-tight mt-6 mb-6 md:mb-0 xl:mt-0'>
-                            We developed a fresh visual direction for a company’s social presence, using templated
-                            content, short-form videos, and design systems to support a consistent, professional look.
-                            The work included everything from post layouts to feed planning and caption writing.
+                            We created static and motion-based visual content for several companies across travel,
+                            fashion, and tech. These assets were designed primarily for digital ads, built to follow
+                            brand guidelines while optimizing for clarity, speed, and platform-specific constraints.
                         </p>
                     </div>
 
@@ -82,7 +80,7 @@ const Website = () => {
                             loop
                             muted
                             playsInline
-                            src="/video/works-socmed1.webm"
+                            src="/video/works_visual1.webm"
                         />
                     </div>
                 </div>
@@ -134,4 +132,4 @@ const Website = () => {
     )
 }
 
-export default Website
+export default VisualCreative

@@ -6,10 +6,8 @@ import Cta from '../components/cta'
 import Socmed from "./components/socmed"
 import Title from './components/title'
 import NavbarMobile from "@/app/components/navbarMobile";
-import CursorFollower from "@/app/components/cursorFollower";
-import Values from "@/app/about-us/components/values";
-import ValuesDescriptionMobile from "@/app/about-us/components/valuesDescriptionMobile";
-import FAQ from "@/app/about-us/components/faq";
+import VisualCreative from "@/app/works/components/visual_creative";
+
 const page = () => {
     return (
 
@@ -22,6 +20,7 @@ const page = () => {
                     <Title/>
                     <Website />
                     <Socmed/>
+                    <VisualCreative/>
                     <div className='mt-40'>
                         <Cta />
                     </div>
