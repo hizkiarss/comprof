@@ -9,40 +9,26 @@ import Buttons from "@/components/buttons";
 const triggers = [
     {
         id: 'msa',
-        label: 'MSA Agency',
-        subLabel: 'COMPANY PROFILE WEBSITE',
+        label: 'Nomad Archipelago',
+        subLabel: 'WEBSITE SERVICE',
         image: '/photos/Social Media Creative Porto 1.png',
-        desc: 'A modern and responsive website for MSA Agency, showcasing their services and portfolio to attract potential clients.'
+        desc: 'A website presents a premium, eco-focused travel experience through clean design and immersive visuals. Built to highlight liveaboard cruises and remote Indonesian destinations.'
     },
     {
         id: 'branding',
-        label: 'Branding',
-        subLabel: 'BRAND IDENTITY DESIGN',
+        label: 'Rooms',
+        subLabel: 'WEBSITE SERVICE',
         image: "/photos/Social Media Creative Porto 2.png",
-        desc: 'Comprehensive branding package including logo design, color palette, typography, and brand guidelines to establish a strong visual identity.'
+        desc: 'Rooms is a modern accommodation platform designed for effortless browsing and booking. With clear listings, intuitive navigation, and a smooth booking flow, it delivers a familiar, user-friendly rental experience.'
     },
     {
         id: 'webdev',
-        label: 'Web Development',
-        subLabel: 'FULLSTACK SOLUTIONS',
+        label: 'One-lifestyle',
+        subLabel: 'WEBSITE SERVICE',
         image: "/photos/Social Media Creative Porto 3.png",
-        desc: "A full-stack web application built with React and Node.js, featuring user authentication, dynamic content, and a sleek, user-friendly interface."
+        desc: "We carefully curated this website to showcase luxury travel experience, featuring handpicked destinations and journeys. Designed with elegant layouts and immersive visuals, the site delivers an experience that captures a travel lifestyle."
     },
-    {
-        id: 'webdev2',
-        label: 'Web Development',
-        subLabel: 'FULLSTACK SOLUTIONS',
-        image: "/photos/Social Media Creative Porto 3.png",
-        desc: "A full-stack web application built with React and Node.js, featuring user authentication, dynamic content, and a sleek, user-friendly interface."
 
-    },
-    {
-        id: 'webdev3',
-        label: 'Web Development',
-        subLabel: 'FULLSTACK SOLUTIONS',
-        image: "/photos/Social Media Creative Porto 3.png",
-        desc: "A full-stack web application built with React and Node.js, featuring user authentication, dynamic content, and a sleek, user-friendly interface."
-    },
 ];
 
 export default function Trigger() {
